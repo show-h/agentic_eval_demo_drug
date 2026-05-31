@@ -8,6 +8,18 @@
 
 ---
 
+## 在线浏览（推荐）
+
+如果开了 GitHub Pages：
+- 📋 [设计与调试汇报](https://show-h.github.io/agentic_eval_demo_drug/reports/index.html)（架构 · 5 个 case · 评分体系 · 沙箱诚信 · fixture 测试一览）
+- 📊 [评测最终报告](https://show-h.github.io/agentic_eval_demo_drug/reports/final_report.html)（agent × case 总分对比 + 各维度明细）
+- 🚨 [沙箱穿透事故复盘](https://show-h.github.io/agentic_eval_demo_drug/reports/SANDBOX_BREACH_EVIDENCE.md)（Claude Opus 4.7 实测穿透行为 · 12 条 evidence）
+- 📜 [完整事故 trajectory](https://show-h.github.io/agentic_eval_demo_drug/reports/SANDBOX_BREACH_TRAJECTORY.log)（240KB · 原始日志）
+
+否则 clone 后用浏览器打开 `reports/index.html` 即可。
+
+---
+
 ## ⏱ 60 秒 Demo
 
 ```bash
