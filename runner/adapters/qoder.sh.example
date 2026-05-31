@@ -1,0 +1,51 @@
+#!/bin/bash
+# Qoder CN (qoderclicn) adapter - 捕获完整轨迹
+# 用法: ./qoder.sh <workspace_dir> <output_dir>
+#
+# Qoder CN v1.0.9 形态对：支持 -p 非交互、--dangerously-skip-permissions 跳过审批
+# - -p / --print: 打印响应后退出（非交互模式）
+# - --dangerously-skip-permissions: 不询问权限（评测要求自动执行）
+# - -w / --cwd: 工作目录
+# - --tools: 限制可用工具（"" 关闭全部，"default" 全部启用）
+# - --output-format: stream-json / json / text
+
+WORKSPACE_DIR=$1
+OUTPUT_DIR=${2:-"$WORKSPACE_DIR"}
+
+# 统一转成绝对路径，避免 cd 后相对路径失效
+WORKSPACE_DIR=$(cd "$WORKSPACE_DIR" && pwd)
+mkdir -p "$OUTPUT_DIR"
+OUTPUT_DIR=$(cd "$OUTPUT_DIR" && pwd)
+
+cd "$WORKSPACE_DIR"
+
+PROMPT=$(cat task_prompt.md)
+
+echo "============================================" > "$OUTPUT_DIR/trajectory.log"
+echo "AGENT: Qoder CN (qoderclicn)" >> "$OUTPUT_DIR/trajectory.log"
+echo "TIMESTAMP: $(date -Iseconds)" >> "$OUTPUT_DIR/trajectory.log"
+echo "WORKSPACE: $WORKSPACE_DIR" >> "$OUTPUT_DIR/trajectory.log"
+echo "============================================" >> "$OUTPUT_DIR/trajectory.log"
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== PROMPT ==========" >> "$OUTPUT_DIR/trajectory.log"
+echo "$PROMPT" >> "$OUTPUT_DIR/trajectory.log"
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== EXECUTION ==========" >> "$OUTPUT_DIR/trajectory.log"
+
+# qoderclicn 非交互模式
+# -p 打印响应后退出
+# --dangerously-skip-permissions 跳过权限审批（评测自动化必需）
+# -w 工作目录
+# --output-format stream-json 结构化输出便于轨迹解析
+qoderclicn -p "$PROMPT" \
+    --dangerously-skip-permissions \
+    -w "$WORKSPACE_DIR" \
+    --output-format stream-json \
+    2>&1 | tee -a "$OUTPUT_DIR/trajectory.log"
+
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== END ==========" >> "$OUTPUT_DIR/trajectory.log"
+
+if [ -f "$WORKSPACE_DIR/output.json" ]; then
+    cp "$WORKSPACE_DIR/output.json" "$OUTPUT_DIR/output.json"
+fi

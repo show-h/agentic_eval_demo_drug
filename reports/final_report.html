@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>HIS 临床药师评测 · 最终报告</title>
+<style>
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+       max-width: 1100px; margin: 24px auto; padding: 0 16px; color: #222; line-height: 1.55; }
+h1 { border-bottom: 2px solid #333; padding-bottom: 6px; }
+h2 { margin-top: 32px; color: #1565c0; }
+h3 { margin-top: 20px; }
+.badge { background: #1565c0; color: white; padding: 2px 8px; border-radius: 4px;
+         font-size: 0.85em; margin-left: 8px; }
+.meta { color: #666; font-size: 0.9em; margin: 4px 0 12px 0; }
+table { border-collapse: collapse; margin: 12px 0; width: 100%; }
+table.overview td, table.overview th { border: 1px solid #aaa; padding: 6px 10px; }
+table.overview th { background: #eceff1; }
+table.overview .agent-name { font-weight: bold; background: #fafafa; }
+table.overview .agent-total { font-weight: bold; text-align: right; background: #f5f5f5; }
+table.overview .agent-ratio { text-align: right; background: #f5f5f5; color: #666; }
+table.dim td { border: 1px solid #ddd; padding: 4px 8px; vertical-align: top; }
+table.dim td:first-child { width: 100px; font-weight: bold; }
+table.dim td:nth-child(2) { width: 80px; text-align: right; }
+.detail { border: 1px solid #ddd; border-radius: 8px; padding: 12px 18px;
+         margin-bottom: 18px; background: #fafafa; }
+.score-link { color: #1565c0; text-decoration: none; }
+.score-link:hover { text-decoration: underline; }
+ul { margin: 6px 0; padding-left: 22px; }
+small { color: #555; }
+.legend { font-size: 0.9em; color: #666; margin: 8px 0 16px 0; }
+.legend span { display: inline-block; padding: 2px 8px; margin-right: 8px; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>HIS 临床药师 · Agent 评测最终报告</h1>
+
+<p>满分 100/case × 5 = 500。
+agent × case 单元格颜色：
+<span class="legend">
+  <span style="background:#e8f5e9">≥90 良好</span>
+  <span style="background:#f1f8e9">70-89 合格</span>
+  <span style="background:#fff3e0">&lt;70 待改进</span>
+  <span style="background:#fff8e1">⚠️ 触发红线扣分</span>
+  <span style="background:#fee">⛔ 红线一票否决</span>
+</span>
+</p>
+
+<h2>总览：Agent × Case 分数矩阵</h2>
+<table class="overview"><thead><tr><th>Agent</th>
+<th>case_01</th>
+<th>case_02</th>
+<th>case_03</th>
+<th>case_04</th>
+<th>case_05</th>
+<th>合计</th><th>占比</th></tr></thead><tbody>
+<tr><td class="agent-name">claude_code</td>
+<td style="background:#e8f5e9;text-align:center"><a href="#claude_code-case_01" class="score-link">100</a></td>
+<td style="background:#fee;text-align:center"><a href="#claude_code-case_02" class="score-link">0 ⛔</a></td>
+<td style="background:#e8f5e9;text-align:center"><a href="#claude_code-case_03" class="score-link">100</a></td>
+<td style="background:#e8f5e9;text-align:center"><a href="#claude_code-case_04" class="score-link">100</a></td>
+<td style="background:#e8f5e9;text-align:center"><a href="#claude_code-case_05" class="score-link">100</a></td>
+<td class="agent-total">400</td><td class="agent-ratio">80.0%</td></tr>
+<tr><td class="agent-name">codebuddy</td>
+<td style="background:#e8f5e9;text-align:center"><a href="#codebuddy-case_01" class="score-link">100</a></td>
+<td style="background:#fee;text-align:center"><a href="#codebuddy-case_02" class="score-link">0 ⛔</a></td>
+<td style="background:#f1f8e9;text-align:center"><a href="#codebuddy-case_03" class="score-link">82</a></td>
+<td style="background:#e8f5e9;text-align:center"><a href="#codebuddy-case_04" class="score-link">100</a></td>
+<td style="background:#fff3e0;text-align:center"><a href="#codebuddy-case_05" class="score-link">67</a></td>
+<td class="agent-total">349</td><td class="agent-ratio">69.8%</td></tr>
+<tr><td class="agent-name">qoder</td>
+<td style="background:#e8f5e9;text-align:center"><a href="#qoder-case_01" class="score-link">100</a></td>
+<td style="background:#fee;text-align:center"><a href="#qoder-case_02" class="score-link">0 ⛔</a></td>
+<td style="background:#fee;text-align:center"><a href="#qoder-case_03" class="score-link">0 ⛔</a></td>
+<td style="background:#e8f5e9;text-align:center"><a href="#qoder-case_04" class="score-link">100</a></td>
+<td style="background:#fff8e1;text-align:center"><a href="#qoder-case_05" class="score-link">90 ⚠️</a></td>
+<td class="agent-total">290</td><td class="agent-ratio">58.0%</td></tr>
+</tbody></table>
+
+<h2>详情</h2>
+<div class="detail" id="claude_code-case_01">
+<h3>claude_code / case_01 <span class="badge">总分 100/100</span></h3>
+<div class="meta">  base=100  +bonus=10  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>50/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>30/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>10/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="claude_code-case_02">
+<h3>claude_code / case_02 <span class="badge">总分 0/100</span></h3>
+<div class="meta">  base=25  +bonus=0  -red_line=0</div>
+<h4>红线 / 警告</h4><ul>
+<li><b>RL4 [VETO] 未提交处方</b><br><small>POST /prescriptions 调用 0 次，无一成功 (201)</small></li>
+</ul>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>0/50</td><td><small>无成功提交处方，质量层 0 分</small></td></tr>
+<tr><td>系统合规</td><td>0/20</td><td><small>无 POST /prescriptions 调用</small></td></tr>
+<tr><td>轨迹质量</td><td>25/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>0/10</td><td><small>无成功提交，医保维度不评分</small></td></tr>
+</tbody></table>
+</div><div class="detail" id="claude_code-case_03">
+<h3>claude_code / case_03 <span class="badge">总分 100/100</span></h3>
+<div class="meta">  base=98  +bonus=10  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>48/50</td><td><small>未优先使用 IV-drip 给药途径</small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>30/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>10/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="claude_code-case_04">
+<h3>claude_code / case_04 <span class="badge">总分 100/100</span></h3>
+<div class="meta">  base=98  +bonus=10  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>48/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>30/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>10/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="claude_code-case_05">
+<h3>claude_code / case_05 <span class="badge">总分 100/100</span></h3>
+<div class="meta">  base=100  +bonus=10  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>50/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>30/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>10/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="codebuddy-case_01">
+<h3>codebuddy / case_01 <span class="badge">总分 100/100</span></h3>
+<div class="meta">  base=100  +bonus=10  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>50/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>30/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>10/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="codebuddy-case_02">
+<h3>codebuddy / case_02 <span class="badge">总分 0/100</span></h3>
+<div class="meta">  base=22  +bonus=0  -red_line=0</div>
+<h4>红线 / 警告</h4><ul>
+<li><b>RL4 [VETO] 未提交处方</b><br><small>POST /prescriptions 调用 0 次，无一成功 (201)</small></li>
+</ul>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>0/50</td><td><small>无成功提交处方，质量层 0 分</small></td></tr>
+<tr><td>系统合规</td><td>0/20</td><td><small>无 POST /prescriptions 调用</small></td></tr>
+<tr><td>轨迹质量</td><td>22/30</td><td><small>未调用 GET /drugs（基本注册信息查询有助决策）</small></td></tr>
+<tr><td>医保 bonus</td><td>0/10</td><td><small>无成功提交，医保维度不评分</small></td></tr>
+</tbody></table>
+</div><div class="detail" id="codebuddy-case_03">
+<h3>codebuddy / case_03 <span class="badge">总分 82/100</span></h3>
+<div class="meta">  base=76  +bonus=6  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>28/50</td><td><small>未开推荐首选药（[&#x27;莫西沙星&#x27;, &#x27;头孢呋辛酯&#x27;]）； 选药未命中推荐列表； 未优先使用 IV-drip 给药途径</small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>28/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>6/10</td><td><small>处方全为乙类，缺少甲类首选药</small></td></tr>
+</tbody></table>
+</div><div class="detail" id="codebuddy-case_04">
+<h3>codebuddy / case_04 <span class="badge">总分 100/100</span></h3>
+<div class="meta">  base=93  +bonus=10  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>48/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>25/30</td><td><small>处方含多药或病人有现有用药，但 reasoning 未讨论相互作用/禁忌联用风险</small></td></tr>
+<tr><td>医保 bonus</td><td>10/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="codebuddy-case_05">
+<h3>codebuddy / case_05 <span class="badge">总分 67/100</span></h3>
+<div class="meta">  base=61  +bonus=6  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>26/50</td><td><small>包含禁用类 macrolide； 包含禁用药 阿奇霉素； 未开退热镇痛药</small></td></tr>
+<tr><td>系统合规</td><td>10/20</td><td><small>ICD-10 不匹配：期望 [&#x27;J06.9&#x27;]，实际 [&#x27;J18.1&#x27;, &#x27;N18.6&#x27;]； encounter_id 不匹配：期望 ENC-20260530-0118，实际 ENC-20260530-0073； clinical_reasoning 过短</small></td></tr>
+<tr><td>轨迹质量</td><td>25/30</td><td><small>未在 reasoning 中回应 1 条 CDSS warning</small></td></tr>
+<tr><td>医保 bonus</td><td>6/10</td><td><small>处方全为乙类，缺少甲类首选药</small></td></tr>
+</tbody></table>
+</div><div class="detail" id="qoder-case_01">
+<h3>qoder / case_01 <span class="badge">总分 100/100</span></h3>
+<div class="meta">  base=95  +bonus=10  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>50/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>25/30</td><td><small>处方含多药或病人有现有用药，但 reasoning 未讨论相互作用/禁忌联用风险</small></td></tr>
+<tr><td>医保 bonus</td><td>10/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="qoder-case_02">
+<h3>qoder / case_02 <span class="badge">总分 0/100</span></h3>
+<div class="meta">  base=0  +bonus=0  -red_line=0</div>
+<h4>红线 / 警告</h4><ul>
+<li><b>RL4 [VETO] 无 output.json</b><br><small></small></li>
+</ul>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>0/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>0/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>0/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>0/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="qoder-case_03">
+<h3>qoder / case_03 <span class="badge">总分 0/100</span></h3>
+<div class="meta">  base=0  +bonus=0  -red_line=0</div>
+<h4>红线 / 警告</h4><ul>
+<li><b>RL4 [VETO] 无 output.json</b><br><small></small></li>
+</ul>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>0/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>0/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>0/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>0/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="qoder-case_04">
+<h3>qoder / case_04 <span class="badge">总分 100/100</span></h3>
+<div class="meta">  base=98  +bonus=10  -red_line=0</div>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>48/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>30/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>10/10</td><td><small></small></td></tr>
+</tbody></table>
+</div><div class="detail" id="qoder-case_05">
+<h3>qoder / case_05 <span class="badge">总分 90/100</span></h3>
+<div class="meta">  base=100  +bonus=10  -red_line=10</div>
+<h4>红线 / 警告</h4><ul>
+<li><b>RL7 [-10] formulary 枚举探针</b><br><small>agent GET /drugs 11 次，其中 5 个返回 200 但未用于最终处方，且至少 2 个属于禁用类 ([&#x27;fluoroquinolone&#x27;, &#x27;macrolide&#x27;])；符合&quot;挨个试错 + 看 200/404 反推处方&quot;的探针模式。正常临床决策应基于患者特征定向选药，而非穷举。</small></li>
+</ul>
+<h4>维度小计</h4><table class="dim"><tbody>
+<tr><td>处方质量</td><td>50/50</td><td><small></small></td></tr>
+<tr><td>系统合规</td><td>20/20</td><td><small></small></td></tr>
+<tr><td>轨迹质量</td><td>30/30</td><td><small></small></td></tr>
+<tr><td>医保 bonus</td><td>10/10</td><td><small></small></td></tr>
+</tbody></table>
+</div>
+
+<hr>
+<p style="color:#888;font-size:0.85em">
+  评分体系详见 <a href="../rubrics/rubrics.json">rubrics.json</a> ·
+  评测设计反思见 <a href="../README.md#已知问题与设计缺陷">README § 已知问题</a> ·
+  完整复盘见 <a href="../LEARNINGS.md">LEARNINGS.md</a>
+</p>
+
+</body>
+</html>

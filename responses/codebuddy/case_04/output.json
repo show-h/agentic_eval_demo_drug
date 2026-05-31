@@ -1,0 +1,75 @@
+{
+  "explicit_avoidance": [
+    {
+      "drug_or_class": "抗生素",
+      "reason": "患者血常规正常，无发热，病因为理化因素刺激而非感染，无使用抗生素指征"
+    },
+    {
+      "drug_or_class": "NSAIDs",
+      "reason": "NSAIDs会抑制前列腺素合成，加重胃黏膜损伤，急性胃炎患者禁用"
+    }
+  ],
+  "encounter_id": "ENC-20260530-0091",
+  "non_drug_advice": [
+    "清淡饮食，避免辛辣、油腻、生冷食物",
+    "戒酒至少1周",
+    "少量多餐，避免暴饮暴食",
+    "如症状无缓解或加重，及时复诊"
+  ],
+  "prescription_items": [
+    {
+      "total_quantity": "7片",
+      "route": "PO",
+      "dose": 20,
+      "specification": "20mg/片",
+      "duration_days": 7,
+      "instructions": "早餐前30分钟整片吞服，不可咀嚼",
+      "dose_unit": "mg",
+      "indidation": "K29.1",
+      "frequency": "qd",
+      "generic_name": "奥美拉唑"
+    },
+    {
+      "total_quantity": "42片",
+      "route": "PO",
+      "dose": 1,
+      "specification": "0.5g/片",
+      "duration_days": 7,
+      "instructions": "饭后1-2小时咀嚼服用，症状缓解后可停药",
+      "dose_unit": "g",
+      "indidation": "K29.1",
+      "frequency": "tid",
+      "generic_name": "铝碳酸镁"
+    },
+    {
+      "total_quantity": "15片",
+      "route": "PO",
+      "dose": 10,
+      "specification": "10mg/片",
+      "duration_days": 5,
+      "instructions": "饭前15-30分钟服用",
+      "dose_unit": "mg",
+      "indidation": "K29.1",
+      "frequency": "tid",
+      "generic_name": "多潘立酮"
+    }
+  ],
+  "diagnosis": [
+    {
+      "name": "急性单纯性胃炎（理化因素刺激所致）",
+      "is_primary": true,
+      "icd10": "K29.1"
+    }
+  ],
+  "patient_id": "P0000456",
+  "clinical_reasoning": "患者为23岁健康男性，因进食辛辣火锅加冰啤酒后出现急性上腹痛伴恶心呕吐，诊断为急性单纯性胃炎（理化因素刺激所致）。血常规正常，无感染证据，无需抗感染治疗。治疗方案：1) 奥美拉唑20mg qd × 7天：PPI强效抑酸，促进胃黏膜修复，为急性胃炎一线治疗；2) 铝碳酸镁1g tid：中和胃酸、保护胃黏膜，可快速缓解上腹痛症状；3) 多潘立酮10mg tid × 5天：患者恶心呕吐症状明显，多潘立酮可促进胃排空、缓解恶心呕吐，短期使用安全性良好。患者23岁、肝肾功能正常、无心血管疾病史，使用多潘立酮风险较低。医保考量：奥美拉唑和铝碳酸镁均为医保甲类，多潘立酮为医保乙类但无限制条件，符合医保合理性。",
+  "follow_up": {
+    "next_visit_days": 7,
+    "red_flags": [
+      "呕血或黑便",
+      "剧烈腹痛伴反跳痛",
+      "持续呕吐无法进食",
+      "发热"
+    ]
+  }
+}

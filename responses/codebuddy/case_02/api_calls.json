@@ -1,0 +1,105 @@
+[
+  {
+    "timestamp": "2026-05-31T12:52:01.659336",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0058",
+      "patient_id": "P0000234",
+      "department": "呼吸内科",
+      "physician_id": "DOC-3041",
+      "started_at": "2026-05-30T10:22:11"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:52:47.578589",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0058",
+      "patient_id": "P0000234",
+      "department": "呼吸内科",
+      "physician_id": "DOC-3041",
+      "started_at": "2026-05-30T10:22:11"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:53:06.151703",
+    "endpoint": "/api/v1/patients/P0000234",
+    "method": "GET",
+    "request": {
+      "patient_id": "P0000234"
+    },
+    "response": {
+      "patient_id": "P0000234",
+      "name_masked": "李*",
+      "age": 20,
+      "sex": "male",
+      "weight_kg": 65,
+      "height_cm": 178,
+      "pregnancy_status": "none",
+      "allergies": [],
+      "comorbidities": [
+        {
+          "name": "支气管哮喘",
+          "icd10": "J45.9",
+          "since": "2018-03",
+          "control_level": "未规律用药"
+        }
+      ],
+      "current_medications": [],
+      "vitals": {
+        "temperature_c": 36.8,
+        "pulse_bpm": 92,
+        "respiration_per_min": 22,
+        "blood_pressure": "122/78",
+        "spo2_percent": 96
+      },
+      "physical_exam": {
+        "consciousness": "清醒",
+        "lung_auscultation": "双肺可闻及哮鸣音",
+        "respiratory_distress": "无明显气促",
+        "cyanosis": "无紫绀"
+      },
+      "labs": [
+        {
+          "name": "血气 SpO2",
+          "value": 96,
+          "unit": "%",
+          "ref_range": ">95",
+          "is_abnormal": false
+        }
+      ],
+      "imaging": [],
+      "renal_function": {
+        "egfr": 112,
+        "crcl": 118,
+        "dialysis": false
+      },
+      "hepatic_function": "normal",
+      "chief_complaint": "气喘胸闷加重 3 天",
+      "present_illness": "既往哮喘病史 8 年，未长期规律使用控制药物。3 天前接触花粉后再次出现气喘胸闷，活动后加重，自行使用 5 年前剩余的沙美特罗/氟替卡松吸入剂未缓解。",
+      "encounter": {
+        "encounter_id": "ENC-20260530-0058",
+        "department": "呼吸内科",
+        "physician_id": "DOC-3041",
+        "physician_diagnosis": [
+          {
+            "icd10": "J45.901",
+            "name": "支气管哮喘急性发作（轻中度）",
+            "is_primary": true
+          }
+        ],
+        "started_at": "2026-05-30T10:22:11"
+      }
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  }
+]

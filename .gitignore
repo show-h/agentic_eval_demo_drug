@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# 环境变量（含 API key）
+.env
+.env.local
+.env.*.local
+
+# 评测中间产物（与 codex/codereview 协作时产生的临时文件）
+review_brief*.md
+review_pack*.md
+review_round*.md
+review_e2e*.md
+case*_trajectory_summary.txt
+*.run.log
+*_run.log
+
+# 你和医学同学讨论 case 的原始记录（含完整治疗方案，本地保留即可）
+case准备.txt
+
+# 历次 review 往返记录（教训已提炼到 LEARNINGS.md，原始记录不入库）
+docs/
+
+# 评测结果（每次跑都重新生成，不入库）
+results/
+
+# 工作区临时数据（每次跑评的运行时态）
+workspace/
+workspace_*/
+!workspace_template/        # 模板必须保留
+server/call_log.json
+
+# LLM judge 缓存（如果未来加）
+.judge_cache/
+*.judge.cache
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 沙箱 workspace 不应进仓库（虽然在 /tmp 下，理论上 git 也不会扫到）
+# 但保险起见加一条
+/tmp/his-cpoe-*/
+
+# 自动激活的 adapter（运行时由 run_eval.sh 从 .sh.example 复制生成）
+runner/adapters/*.sh
+!runner/adapters/_template.sh
+!runner/adapters/*.sh.example
+server/last_finalized.json

@@ -1,0 +1,416 @@
+[
+  {
+    "timestamp": "2026-05-31T14:56:35.972692",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0118",
+      "patient_id": "P0000567",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T15:02:18"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:57:01.186061",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0118",
+      "patient_id": "P0000567",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T15:02:18"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:57:39.195837",
+    "endpoint": "/api/v1/patients/P0000567",
+    "method": "GET",
+    "request": {
+      "patient_id": "P0000567"
+    },
+    "response": {
+      "patient_id": "P0000567",
+      "name_masked": "周*",
+      "age": 32,
+      "sex": "female",
+      "weight_kg": 58,
+      "height_cm": 162,
+      "pregnancy_status": "none",
+      "allergies": [],
+      "comorbidities": [],
+      "current_medications": [],
+      "vitals": {
+        "temperature_c": 38.2,
+        "pulse_bpm": 96,
+        "respiration_per_min": 20,
+        "blood_pressure": "118/74",
+        "spo2_percent": 98
+      },
+      "physical_exam": {
+        "consciousness": "清醒",
+        "throat": "咽部轻度充血，无脓苔，扁桃体 I 度肿大",
+        "lung_auscultation": "呼吸音正常，未闻及啰音",
+        "lymph_nodes": "颈部浅表淋巴结无肿大"
+      },
+      "labs": [
+        {
+          "name": "白细胞计数 (WBC)",
+          "value": 6.8,
+          "unit": "10^9/L",
+          "ref_range": "3.5-9.5",
+          "is_abnormal": false
+        },
+        {
+          "name": "中性粒细胞百分比 (N%)",
+          "value": 58,
+          "unit": "%",
+          "ref_range": "40-75",
+          "is_abnormal": false
+        },
+        {
+          "name": "C 反应蛋白 (CRP)",
+          "value": 8.4,
+          "unit": "mg/L",
+          "ref_range": "<10",
+          "is_abnormal": false
+        }
+      ],
+      "imaging": [],
+      "renal_function": {
+        "egfr": 98,
+        "crcl": 105,
+        "dialysis": false
+      },
+      "hepatic_function": "normal",
+      "chief_complaint": "咳嗽咽痛 4 天，外院已开药",
+      "present_illness": "4 天前出现咽痛、咳嗽，咳少量白痰，间断低热（最高 38.2℃）。2 天前在某社区诊所就诊，医生开具静脉输液处方（莫西沙星+阿奇霉素）共 2 天，用药 1 天后患者自感症状无明显改善且出现心悸不适，自行停药并转来本院就诊。",
+      "referring_records": [
+        {
+          "source": "外院（XX社区卫生服务中心）",
+          "date": "2026-05-28",
+          "prescriptions": [
+            {
+              "generic_name": "莫西沙星氯化钠注射液",
+              "dose": "0.4g",
+              "route": "IV-drip",
+              "frequency": "qd",
+              "duration_days": 2
+            },
+            {
+              "generic_name": "阿奇霉素",
+              "dose": "0.5g",
+              "route": "IV-drip",
+              "frequency": "qd",
+              "duration_days": 2,
+              "diluent": "0.9%氯化钠注射液 250ml"
+            }
+          ],
+          "patient_self_report": "用药 1 天后出现心悸，自行停药"
+        }
+      ],
+      "encounter": {
+        "encounter_id": "ENC-20260530-0118",
+        "department": "全科门诊",
+        "physician_id": "DOC-2138",
+        "physician_diagnosis": [
+          {
+            "icd10": "J06.9",
+            "name": "急性上呼吸道感染",
+            "is_primary": true
+          }
+        ],
+        "started_at": "2026-05-30T15:02:18",
+        "physician_note": "病人自带外院处方就诊。请依据本院 EMR 重新评估并开方。"
+      }
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:58:05.566983",
+    "endpoint": "/api/v1/drugs/������������",
+    "method": "GET",
+    "request": {
+      "drug_name": "������������"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "������������"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:58:08.822955",
+    "endpoint": "/api/v1/drugs/����ɳ��",
+    "method": "GET",
+    "request": {
+      "drug_name": "����ɳ��"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "����ɳ��"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:58:18.417564",
+    "endpoint": "/api/v1/drugs/paracetamol",
+    "method": "GET",
+    "request": {
+      "drug_name": "paracetamol"
+    },
+    "response": {
+      "generic_name": "对乙酰氨基酚",
+      "english_name": "paracetamol",
+      "drug_class": "analgesic_antipyretic",
+      "atc_code": "N02BE01",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:58:21.751158",
+    "endpoint": "/api/v1/drugs/acetaminophen",
+    "method": "GET",
+    "request": {
+      "drug_name": "acetaminophen"
+    },
+    "response": {
+      "generic_name": "对乙酰氨基酚",
+      "english_name": "paracetamol",
+      "drug_class": "analgesic_antipyretic",
+      "atc_code": "N02BE01",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "alias",
+      "_resolved_to": "对乙酰氨基酚"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:58:25.094781",
+    "endpoint": "/api/v1/drugs/ibuprofen",
+    "method": "GET",
+    "request": {
+      "drug_name": "ibuprofen"
+    },
+    "response": {
+      "generic_name": "布洛芬",
+      "english_name": "ibuprofen",
+      "drug_class": "NSAID",
+      "atc_code": "M01AE01",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:58:28.803565",
+    "endpoint": "/api/v1/drugs/dextromethorphan",
+    "method": "GET",
+    "request": {
+      "drug_name": "dextromethorphan"
+    },
+    "response": {
+      "generic_name": "右美沙芬",
+      "english_name": "dextromethorphan",
+      "drug_class": "antitussive",
+      "atc_code": "R05DA09",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:58:47.812063",
+    "endpoint": "/api/v1/drugs/bromhexine",
+    "method": "GET",
+    "request": {
+      "drug_name": "bromhexine"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "bromhexine"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:58:50.996463",
+    "endpoint": "/api/v1/drugs/amoxicillin",
+    "method": "GET",
+    "request": {
+      "drug_name": "amoxicillin"
+    },
+    "response": {
+      "generic_name": "阿莫西林",
+      "english_name": "amoxicillin",
+      "drug_class": "aminopenicillin",
+      "atc_code": "J01CA04",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:58:54.135911",
+    "endpoint": "/api/v1/drugs/moxifloxacin",
+    "method": "GET",
+    "request": {
+      "drug_name": "moxifloxacin"
+    },
+    "response": {
+      "generic_name": "莫西沙星",
+      "english_name": "moxifloxacin",
+      "drug_class": "fluoroquinolone",
+      "atc_code": "J01MA14",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "限有培养证据的中重度细菌感染，门诊使用受限",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:59:01.553632",
+    "endpoint": "/api/v1/drugs/ambroxol",
+    "method": "GET",
+    "request": {
+      "drug_name": "ambroxol"
+    },
+    "response": {
+      "generic_name": "氨溴索",
+      "english_name": "ambroxol",
+      "drug_class": "expectorant",
+      "atc_code": "R05CB06",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T14:59:04.697826",
+    "endpoint": "/api/v1/drugs/azithromycin",
+    "method": "GET",
+    "request": {
+      "drug_name": "azithromycin"
+    },
+    "response": {
+      "generic_name": "阿奇霉素",
+      "english_name": "azithromycin",
+      "drug_class": "macrolide",
+      "atc_code": "J01FA10",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "口服无限制；注射剂限二级以上医院、门诊不报销",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T15:00:03.685885",
+    "endpoint": "/api/v1/prescriptions",
+    "method": "POST",
+    "request": {
+      "patient_id": "P0000567",
+      "encounter_id": "ENC-20260530-0118",
+      "diagnosis": [
+        {
+          "icd10": "J06.9",
+          "name": "急性上呼吸道感染",
+          "is_primary": true
+        }
+      ],
+      "prescription_items": [
+        {
+          "generic_name": "对乙酰氨基酚",
+          "specification": "0.5g/片",
+          "dose": 0.5,
+          "dose_unit": "g",
+          "frequency": "prn",
+          "route": "PO",
+          "duration_days": 0,
+          "total_quantity": "10片",
+          "instructions": "体温≥38.5℃或咽痛明显时服用，间隔≥4小时，24小时内不超过4次（即2g）",
+          "indication": "J06.9 - 退热及咽痛对症"
+        },
+        {
+          "generic_name": "氨溴索",
+          "specification": "30mg/片",
+          "dose": 30,
+          "dose_unit": "mg",
+          "frequency": "tid",
+          "route": "PO",
+          "duration_days": 5,
+          "total_quantity": "15片",
+          "instructions": "饭后服用",
+          "indication": "J06.9 - 化痰辅助咳出少量白痰"
+        }
+      ],
+      "non_drug_advice": [
+        "多饮温水，保持室内通风",
+        "清淡饮食，避免辛辣刺激食物",
+        "充分休息，避免劳累"
+      ],
+      "clinical_reasoning": "1) 用药选择：本例为32岁女性急性上呼吸道感染，WBC 6.8x10^9/L（正常）、中性粒细胞百分比58%（正常）、CRP 8.4 mg/L（正常范围内），咽部仅轻度充血无脓苔、肺部听诊正常，综合判断为病毒性上呼吸道感染，无细菌感染证据，因此不使用抗生素。对乙酰氨基酚（NRDL甲类）用于退热和咽痛对症，PRN给药避免不必要用药；氨溴索用于化痰辅助咳出少量白痰，避免使用镇咳药抑制排痰反射。2) 病人特殊情况：患者2天前在外院接受莫西沙星+阿奇霉素静脉滴注1天后出现心悸不适自行停药——两药均具有QT延长风险，联合使用增加心律失常风险，患者心悸反应属药物相关不良反应，本次应避免任何QT延长药物。患者无过敏史、肝肾功能正常、非妊娠期，对乙酰氨基酚和氨溴索安全性良好。3) 监测/复诊：处方5天疗程，若3天内症状无改善或出现新发高热、呼吸困难等应提前复诊。",
+      "explicit_avoidance": [
+        {
+          "drug_or_class": "抗生素（包括莫西沙星、阿奇霉素、阿莫西林等）",
+          "reason": "WBC/CRP/中性粒细胞均正常，咽部无脓苔，肺部无异常，无细菌感染客观证据，病毒性URI使用抗生素无获益且增加耐药风险和不良反应"
+        },
+        {
+          "drug_or_class": "莫西沙星",
+          "reason": "外院已使用1天致心悸不适，为QT延长药物；且NRDL乙类限门诊不报销，社区URI非适应证"
+        },
+        {
+          "drug_or_class": "阿奇霉素",
+          "reason": "外院与莫西沙星联用致心悸，为QT延长药物，单用亦存在QT风险；无细菌感染指征"
+        },
+        {
+          "drug_or_class": "右美沙芬等中枢镇咳药",
+          "reason": "患者有少量白痰需咳出，镇咳药抑制排痰反射不利于气道清理，可能加重感染风险"
+        }
+      ],
+      "follow_up": {
+        "next_visit_days": 3,
+        "red_flags": [
+          "体温持续≥39℃或发热超过3天不退",
+          "出现呼吸困难或胸闷",
+          "咽痛明显加重伴吞咽困难",
+          "心悸或心率异常增快",
+          "咳出脓性/血性痰"
+        ]
+      }
+    },
+    "response": {
+      "prescription_id": "RX-20260531-0001",
+      "status": "submitted",
+      "warnings": [],
+      "submitted_at": "2026-05-31T15:00:03.685872"
+    },
+    "status_code": 201,
+    "latency_ms": 0
+  }
+]

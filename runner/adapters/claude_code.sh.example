@@ -1,0 +1,45 @@
+#!/bin/bash
+# Claude Code adapter - 捕获完整轨迹（prompt + CoT + tool calls + response）
+# 用法: ./claude_code.sh <workspace_dir> <output_dir>
+
+WORKSPACE_DIR=$1
+OUTPUT_DIR=${2:-"$WORKSPACE_DIR"}
+
+# 统一转成绝对路径，避免 cd 后相对路径失效
+WORKSPACE_DIR=$(cd "$WORKSPACE_DIR" && pwd)
+mkdir -p "$OUTPUT_DIR"
+OUTPUT_DIR=$(cd "$OUTPUT_DIR" && pwd)
+
+cd "$WORKSPACE_DIR"
+
+PROMPT=$(cat task_prompt.md)
+
+echo "============================================" > "$OUTPUT_DIR/trajectory.log"
+echo "AGENT: Claude Code (Opus 4.7)" >> "$OUTPUT_DIR/trajectory.log"
+echo "TIMESTAMP: $(date -Iseconds)" >> "$OUTPUT_DIR/trajectory.log"
+echo "WORKSPACE: $WORKSPACE_DIR" >> "$OUTPUT_DIR/trajectory.log"
+echo "============================================" >> "$OUTPUT_DIR/trajectory.log"
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== PROMPT ==========" >> "$OUTPUT_DIR/trajectory.log"
+echo "$PROMPT" >> "$OUTPUT_DIR/trajectory.log"
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== EXECUTION ==========" >> "$OUTPUT_DIR/trajectory.log"
+
+# 运行Claude Code，捕获完整输出（包含CoT、工具调用、工具输出、最终回复）
+# --dangerously-skip-permissions: 跳过所有权限审批（评测自动化必需）
+# --output-format stream-json: 输出结构化事件流（每行一个 JSON 对象，含 thinking / tool_use / tool_result / message_delta 等）
+# --verbose: stream-json 模式下要求开启 verbose
+# 2>&1: 合并stderr
+claude -p "$PROMPT" \
+    --dangerously-skip-permissions \
+    --verbose \
+    --output-format stream-json \
+    2>&1 | tee -a "$OUTPUT_DIR/trajectory.log"
+
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== END ==========" >> "$OUTPUT_DIR/trajectory.log"
+
+# 确保output.json存在（Claude Code应该会在workspace里生成）
+if [ -f "$WORKSPACE_DIR/output.json" ]; then
+    cp "$WORKSPACE_DIR/output.json" "$OUTPUT_DIR/output.json"
+fi

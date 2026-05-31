@@ -1,0 +1,69 @@
+{
+  "_note": "drug-drug interactions DB. 双向匹配（A-B 与 B-A 同等命中）。所有名称用通用名。",
+  "interactions": [
+    {
+      "drug_a": "莫西沙星",
+      "drug_b": "阿奇霉素",
+      "severity": "contraindicated",
+      "mechanism": "QT 间期叠加延长，致命性尖端扭转型室速/心室颤动风险",
+      "evidence_level": "A",
+      "recommendation": "绝对禁止联用。任意喹诺酮+大环内酯均属禁忌。"
+    },
+    {
+      "drug_a": "莫西沙星",
+      "drug_b": "多潘立酮",
+      "severity": "major",
+      "mechanism": "QT 间期叠加",
+      "evidence_level": "B",
+      "recommendation": "避免联用，必要时密切监测心电图"
+    },
+    {
+      "drug_a": "阿奇霉素",
+      "drug_b": "多潘立酮",
+      "severity": "major",
+      "mechanism": "QT 间期叠加",
+      "evidence_level": "B",
+      "recommendation": "避免联用"
+    },
+    {
+      "drug_a": "蒙脱石散",
+      "drug_b": "奥美拉唑",
+      "severity": "moderate",
+      "mechanism": "蒙脱石强吸附性显著降低 PPI 吸收",
+      "evidence_level": "B",
+      "recommendation": "如需同用，间隔 ≥ 2h"
+    },
+    {
+      "drug_a": "布洛芬",
+      "drug_b": "阿莫西林克拉维酸钾",
+      "severity": "minor",
+      "mechanism": "对肾损害有协同效应（肾功能不全患者尤需注意）",
+      "evidence_level": "C",
+      "recommendation": "肾功能正常者可用，肾损者避免"
+    },
+    {
+      "drug_a": "氢氯噻嗪",
+      "drug_b": "阿奇霉素",
+      "severity": "moderate",
+      "mechanism": "氢氯噻嗪致低钾增加阿奇霉素 QT 延长风险",
+      "evidence_level": "B",
+      "recommendation": "监测电解质和心电图"
+    },
+    {
+      "drug_a": "缬沙坦",
+      "drug_b": "布洛芬",
+      "severity": "moderate",
+      "mechanism": "NSAID 减弱 ARB 降压作用 + 加重肾损",
+      "evidence_level": "A",
+      "recommendation": "尽量避免长期联用"
+    },
+    {
+      "drug_a": "沙美特罗氟替卡松",
+      "drug_b": "沙丁胺醇",
+      "severity": "minor",
+      "mechanism": "β2 激动剂叠加，心悸/震颤可能加重",
+      "evidence_level": "B",
+      "recommendation": "急救时可短期联用，注意监测"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "patient_id": "P0000456",
+  "encounter_id": "ENC-20260530-0091",
+  "diagnosis": [
+    {
+      "icd10": "K29.1",
+      "name": "急性单纯性胃炎（理化因素刺激所致）",
+      "is_primary": true
+    }
+  ],
+  "prescription_items": [
+    {
+      "generic_name": "奥美拉唑",
+      "specification": "20mg/片",
+      "dose": 20,
+      "dose_unit": "mg",
+      "frequency": "bid",
+      "route": "PO",
+      "duration_days": 7,
+      "total_quantity": "14片",
+      "instructions": "晨起及晚睡前空腹服用",
+      "indication": "K29.1"
+    },
+    {
+      "generic_name": "铝碳酸镁",
+      "specification": "0.5g/片",
+      "dose": 1,
+      "dose_unit": "g",
+      "frequency": "tid",
+      "route": "PO",
+      "duration_days": 7,
+      "total_quantity": "42片",
+      "instructions": "餐后1-2小时咀嚼后吞服",
+      "indication": "K29.1"
+    },
+    {
+      "generic_name": "多潘立酮",
+      "specification": "10mg/片",
+      "dose": 10,
+      "dose_unit": "mg",
+      "frequency": "tid",
+      "route": "PO",
+      "duration_days": 3,
+      "total_quantity": "9片",
+      "instructions": "餐前15-30分钟服用",
+      "indication": "K29.1"
+    }
+  ],
+  "non_drug_advice": [
+    "清淡易消化饮食，避免辛辣油腻及刺激性食物",
+    "禁酒及冰冷饮品至少1周",
+    "少量多餐，避免暴饮暴食",
+    "充分休息，规律作息"
+  ],
+  "clinical_reasoning": "（1）选药理由：患者为23岁男性，进食大量辛辣火锅+冰啤酒后出现上腹痛伴恶心呕吐，诊断为理化因素所致急性单纯性胃炎。WBC及中性粒细胞正常，无细菌感染证据，无发热，故以对症治疗为主。奥美拉唑（PPI，NRDL甲类）是抑酸治疗的基石，可有效减少胃酸分泌、促进黏膜修复，20mg bid为标准剂量。铝碳酸镁（抗酸+黏膜保护剂，NRDL甲类）兼具中和胃酸和黏膜保护作用，可快速缓解上腹痛症状。多潘立酮（促动力药，NRDL乙类）用于控制恶心呕吐症状，较甲氧氯普胺中枢副作用更小，10mg tid短期（3天）使用安全合理。（2）剂量/疗程依据：PPI疗程7天符合急性胃炎常规疗程；铝碳酸镁同步7天提供持续黏膜保护与症状缓解；多潘立酮限3天因恶心呕吐通常在抑酸后2-3天即缓解，避免不必要延长用药。患者肝肾功能正常，无需剂量调整。（3）相互作用考量：患者无合并用药，多潘立酮与奥美拉唑无显著相互作用；铝碳酸镁可影响其他药物吸收，但本处方中各药服用时间错开（奥美拉唑空腹、铝碳酸镁餐后、多潘立酮餐前），理论上不冲突。（4）监测与复诊：7日后复诊评估症状缓解情况，若仍持续腹痛或出现呕血/黑便需进一步检查。",
+  "explicit_avoidance": [
+    {
+      "drug_or_class": "抗生素",
+      "reason": "WBC及中性粒细胞正常，无细菌感染证据，急性单纯性胃炎为理化刺激所致，抗生素无指征"
+    },
+    {
+      "drug_or_class": "非甾体抗炎药（NSAIDs）",
+      "reason": "NSAIDs本身可损伤胃黏膜，在急性胃炎期间使用会加重黏膜损伤，属禁忌"
+    },
+    {
+      "drug_or_class": "甲氧氯普胺",
+      "reason": "中枢止吐作用更强但锥体外系副作用风险高于多潘立酮，年轻患者选用多潘立酮更安全"
+    },
+    {
+      "drug_or_class": "H2受体拮抗剂",
+      "reason": "抑酸效果弱于PPI，急性胃炎需要强效抑酸促进黏膜修复，PPI为首选"
+    }
+  ],
+  "follow_up": {
+    "next_visit_days": 7,
+    "red_flags": [
+      "呕血或咖啡色呕吐物",
+      "黑便",
+      "腹痛加重或范围扩大",
+      "发热>38度",
+      "持续呕吐无法进食超过24小时"
+    ]
+  }
+}

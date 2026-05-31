@@ -1,0 +1,43 @@
+#!/bin/bash
+# CodeBuddy CLI adapter - 捕获完整轨迹
+# 用法: ./codebuddy.sh <workspace_dir> <output_dir>
+
+WORKSPACE_DIR=$1
+OUTPUT_DIR=${2:-"$WORKSPACE_DIR"}
+
+# 统一转成绝对路径，避免 cd 后相对路径失效
+WORKSPACE_DIR=$(cd "$WORKSPACE_DIR" && pwd)
+mkdir -p "$OUTPUT_DIR"
+OUTPUT_DIR=$(cd "$OUTPUT_DIR" && pwd)
+
+cd "$WORKSPACE_DIR"
+
+PROMPT=$(cat task_prompt.md)
+
+echo "============================================" > "$OUTPUT_DIR/trajectory.log"
+echo "AGENT: CodeBuddy" >> "$OUTPUT_DIR/trajectory.log"
+echo "TIMESTAMP: $(date -Iseconds)" >> "$OUTPUT_DIR/trajectory.log"
+echo "WORKSPACE: $WORKSPACE_DIR" >> "$OUTPUT_DIR/trajectory.log"
+echo "============================================" >> "$OUTPUT_DIR/trajectory.log"
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== PROMPT ==========" >> "$OUTPUT_DIR/trajectory.log"
+echo "$PROMPT" >> "$OUTPUT_DIR/trajectory.log"
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== EXECUTION ==========" >> "$OUTPUT_DIR/trajectory.log"
+
+# CodeBuddy CLI:
+#   -p: print mode (非交互，单次执行后退出)
+#   -y: 跳过权限确认（文件读写、命令执行需要）
+#   --output-format stream-json: 结构化输出（含CoT/tool_call/tool_output）
+#   --model: 切到腾讯混元 3.0 preview
+#     CodeBuddy 默认底层为 claude-sonnet-4.6，但 demo 评测要呈现"国产 agent + 国产模型"
+#     的真实组合，故主动切到混元。CLI 也支持 GLM / Kimi / MiniMax 等其他国产模型。
+codebuddy -p "$PROMPT" -y --output-format stream-json --model hy3-preview-ioa 2>&1 | tee -a "$OUTPUT_DIR/trajectory.log"
+
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== END ==========" >> "$OUTPUT_DIR/trajectory.log"
+
+# 收集output.json
+if [ -f "$WORKSPACE_DIR/output.json" ]; then
+    cp "$WORKSPACE_DIR/output.json" "$OUTPUT_DIR/output.json"
+fi

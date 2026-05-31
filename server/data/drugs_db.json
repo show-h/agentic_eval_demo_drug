@@ -1,0 +1,614 @@
+{
+  "drugs": {
+    "莫西沙星": {
+      "generic_name": "莫西沙星",
+      "english_name": "moxifloxacin",
+      "drug_class": "fluoroquinolone",
+      "atc_code": "J01MA14",
+      "indications": [
+        "社区获得性肺炎（中重度）",
+        "复杂性皮肤软组织感染",
+        "复杂性腹腔内感染"
+      ],
+      "standard_dose": {
+        "adult": "400mg qd PO/IV-drip",
+        "pediatric": "禁用 <18岁（影响骨骼发育）"
+      },
+      "renal_adjustment": {
+        "egfr_lt_30": "无需调整（主要肝代谢）",
+        "dialysis": "无需调整"
+      },
+      "hepatic_adjustment": {
+        "severe": "禁用"
+      },
+      "pregnancy_category": "C",
+      "lactation": "避免使用",
+      "contraindications": [
+        "对喹诺酮类过敏",
+        "QT 延长",
+        "肌腱炎/肌腱断裂史",
+        "<18岁"
+      ],
+      "qt_prolongation_risk": "high",
+      "common_adverse_effects": [
+        "恶心",
+        "腹泻",
+        "QT 延长",
+        "肌腱损伤",
+        "光敏反应"
+      ],
+      "warnings": [
+        "黑框警告：肌腱断裂",
+        "禁用于 18 岁以下",
+        "光敏反应"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "限有培养证据的中重度细菌感染，门诊使用受限"
+    },
+    "阿奇霉素": {
+      "generic_name": "阿奇霉素",
+      "english_name": "azithromycin",
+      "drug_class": "macrolide",
+      "atc_code": "J01FA10",
+      "indications": [
+        "上呼吸道感染（细菌性）",
+        "下呼吸道感染（包括非典型病原体）",
+        "皮肤软组织感染"
+      ],
+      "standard_dose": {
+        "adult": "口服: 500mg qd × 3d 或 500mg D1 → 250mg qd × 4d；静滴: 500mg qd × 2d 后改口服"
+      },
+      "renal_adjustment": {
+        "egfr_lt_30": "慎用",
+        "dialysis": "慎用"
+      },
+      "hepatic_adjustment": {
+        "severe": "禁用"
+      },
+      "pregnancy_category": "B",
+      "lactation": "可用（少量进入乳汁）",
+      "contraindications": [
+        "对大环内酯过敏",
+        "严重肝功能不全",
+        "QT 延长高危"
+      ],
+      "qt_prolongation_risk": "moderate",
+      "common_adverse_effects": [
+        "腹泻",
+        "恶心",
+        "QT 延长",
+        "肝酶升高"
+      ],
+      "warnings": [
+        "与喹诺酮联用 QT 风险叠加",
+        "心血管事件风险"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "口服无限制；注射剂限二级以上医院、门诊不报销"
+    },
+    "阿莫西林": {
+      "generic_name": "阿莫西林",
+      "english_name": "amoxicillin",
+      "drug_class": "aminopenicillin",
+      "atc_code": "J01CA04",
+      "indications": [
+        "上呼吸道感染（细菌性）",
+        "下呼吸道感染",
+        "泌尿系感染",
+        "幽门螺杆菌根除"
+      ],
+      "standard_dose": {
+        "adult": "0.5g tid PO × 5-7d（重度可加量至 1g tid）",
+        "pediatric": "20-40 mg/kg/d 分3次"
+      },
+      "renal_adjustment": {
+        "egfr_30_50": "正常剂量",
+        "egfr_10_30": "0.5g q12h",
+        "egfr_lt_10": "0.5g q24h",
+        "dialysis": "透析后给 0.5g"
+      },
+      "hepatic_adjustment": {
+        "severe": "无需调整"
+      },
+      "pregnancy_category": "B",
+      "lactation": "可用",
+      "contraindications": [
+        "青霉素类过敏",
+        "传染性单核细胞增多症（出疹风险）"
+      ],
+      "qt_prolongation_risk": "none",
+      "common_adverse_effects": [
+        "腹泻",
+        "皮疹",
+        "过敏反应"
+      ],
+      "warnings": [
+        "青霉素过敏者禁用"
+      ],
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无"
+    },
+    "阿莫西林克拉维酸钾": {
+      "generic_name": "阿莫西林克拉维酸钾",
+      "english_name": "amoxicillin-clavulanate",
+      "drug_class": "aminopenicillin_with_inhibitor",
+      "atc_code": "J01CR02",
+      "indications": [
+        "社区获得性肺炎",
+        "上呼吸道感染（耐药菌）",
+        "皮肤软组织感染",
+        "泌尿系感染"
+      ],
+      "standard_dose": {
+        "adult_oral": "0.625g tid PO × 5-7d",
+        "adult_iv": "1.2g IV q8h × 7-10d"
+      },
+      "renal_adjustment": {
+        "egfr_10_30": "0.6g IV q12h",
+        "egfr_lt_10": "0.6g IV q24h",
+        "dialysis": "透析后给 0.6g"
+      },
+      "hepatic_adjustment": {
+        "severe": "慎用（胆汁淤积风险）"
+      },
+      "pregnancy_category": "B",
+      "lactation": "可用",
+      "contraindications": [
+        "青霉素类过敏",
+        "胆汁淤积型肝病史"
+      ],
+      "qt_prolongation_risk": "none",
+      "common_adverse_effects": [
+        "腹泻（克拉维酸所致）",
+        "皮疹",
+        "胆汁淤积"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无"
+    },
+    "美罗培南": {
+      "generic_name": "美罗培南",
+      "english_name": "meropenem",
+      "drug_class": "carbapenem",
+      "atc_code": "J01DH02",
+      "indications": [
+        "重症复杂感染（脓毒症/重症肺炎/腹腔感染）",
+        "ESBL/AmpC 菌感染",
+        "免疫缺陷宿主感染",
+        "中枢神经系统感染"
+      ],
+      "standard_dose": {
+        "adult_normal_renal": "0.5-1g IV q8h（重症 2g q8h）"
+      },
+      "renal_adjustment": {
+        "crcl_25_50": "1g q12h",
+        "crcl_10_25": "0.5g q12h",
+        "crcl_lt_10": "0.5g q24h",
+        "hemodialysis": "0.5g q24h，透析后补充 0.5g"
+      },
+      "hepatic_adjustment": {
+        "severe": "无需调整"
+      },
+      "pregnancy_category": "B",
+      "lactation": "慎用",
+      "contraindications": [
+        "对碳青霉烯类过敏",
+        "对其他 β-内酰胺类严重过敏"
+      ],
+      "qt_prolongation_risk": "none",
+      "common_adverse_effects": [
+        "腹泻",
+        "皮疹",
+        "癫痫（剂量过大或肾损时）",
+        "二重感染"
+      ],
+      "warnings": [
+        "最后一道防线，普通感染禁用",
+        "肾功能不全必须调整剂量，否则癫痫/精神症状风险"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "限重症感染、限二级以上医院、限有细菌培养结果或经会诊批准。门诊普通感染使用属超范围。"
+    },
+    "沙丁胺醇": {
+      "generic_name": "沙丁胺醇",
+      "english_name": "salbutamol",
+      "drug_class": "SABA",
+      "atc_code": "R03AC02",
+      "indications": [
+        "哮喘急性发作",
+        "慢阻肺急性加重"
+      ],
+      "standard_dose": {
+        "inhaler": "100μg/喷，1-2 喷 prn，24h ≤ 8-12 喷",
+        "nebulization": "2.5-5 mg NEB prn",
+        "oral": "2-4 mg tid PO（仅在无法吸入时使用，全身副作用大）"
+      },
+      "renal_adjustment": {
+        "egfr_lt_30": "无需调整"
+      },
+      "hepatic_adjustment": {
+        "severe": "慎用"
+      },
+      "pregnancy_category": "C",
+      "lactation": "可用",
+      "contraindications": [
+        "对沙丁胺醇过敏"
+      ],
+      "qt_prolongation_risk": "low",
+      "common_adverse_effects": [
+        "心悸",
+        "震颤",
+        "低钾",
+        "头痛"
+      ],
+      "warnings": [
+        "单药维持治疗增加死亡风险（GINA 2025 不推荐）"
+      ],
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无"
+    },
+    "沙美特罗氟替卡松": {
+      "generic_name": "沙美特罗氟替卡松",
+      "english_name": "salmeterol-fluticasone",
+      "drug_class": "LABA_ICS",
+      "atc_code": "R03AK06",
+      "indications": [
+        "哮喘长期控制",
+        "COPD 维持"
+      ],
+      "standard_dose": {
+        "inhaler": "50/250μg 或 50/500μg，1 吸 bid"
+      },
+      "renal_adjustment": {
+        "any": "无需调整"
+      },
+      "hepatic_adjustment": {
+        "any": "无需调整"
+      },
+      "pregnancy_category": "C",
+      "lactation": "可用",
+      "contraindications": [
+        "不可用于哮喘急性发作（沙美特罗起效慢）"
+      ],
+      "qt_prolongation_risk": "low",
+      "common_adverse_effects": [
+        "声嘶",
+        "口腔念珠菌",
+        "心悸"
+      ],
+      "warnings": [
+        "沙美特罗起效缓慢，禁用于急救"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "限哮喘、COPD 长期控制"
+    },
+    "布地奈德福莫特罗": {
+      "generic_name": "布地奈德福莫特罗",
+      "english_name": "budesonide-formoterol",
+      "drug_class": "LABA_ICS_MART",
+      "atc_code": "R03AK07",
+      "indications": [
+        "哮喘 MART 方案（维持+缓解一体化）",
+        "COPD 维持"
+      ],
+      "standard_dose": {
+        "inhaler": "160/4.5μg，维持 1 吸 bid；按需 1 吸 prn（24h ≤ 8 吸，紧急情况 ≤ 12 吸）"
+      },
+      "renal_adjustment": {
+        "any": "无需调整"
+      },
+      "hepatic_adjustment": {
+        "severe": "慎用"
+      },
+      "pregnancy_category": "C",
+      "lactation": "可用",
+      "contraindications": [
+        "对组分过敏"
+      ],
+      "qt_prolongation_risk": "low",
+      "common_adverse_effects": [
+        "声嘶",
+        "心悸",
+        "口腔念珠菌",
+        "震颤"
+      ],
+      "warnings": [
+        "GINA 2025 路径1 首选；福莫特罗 3-5min 起效，可作急救"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "限哮喘、COPD"
+    },
+    "对乙酰氨基酚": {
+      "generic_name": "对乙酰氨基酚",
+      "english_name": "paracetamol",
+      "drug_class": "analgesic_antipyretic",
+      "atc_code": "N02BE01",
+      "indications": [
+        "发热",
+        "轻中度疼痛"
+      ],
+      "standard_dose": {
+        "adult": "0.5-1g PO prn（≥4h 间隔，24h ≤ 4g）",
+        "pediatric": "10-15 mg/kg PO prn"
+      },
+      "renal_adjustment": {
+        "egfr_lt_30": "延长给药间隔至 q6h"
+      },
+      "hepatic_adjustment": {
+        "severe": "禁用"
+      },
+      "pregnancy_category": "B",
+      "lactation": "可用",
+      "contraindications": [
+        "严重肝功能不全",
+        "对乙酰氨基酚过敏"
+      ],
+      "qt_prolongation_risk": "none",
+      "common_adverse_effects": [
+        "肝损（过量）",
+        "皮疹"
+      ],
+      "warnings": [
+        "每日总量 ≤ 4g（含其他含对乙酰氨基酚复方制剂）"
+      ],
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无"
+    },
+    "布洛芬": {
+      "generic_name": "布洛芬",
+      "english_name": "ibuprofen",
+      "drug_class": "NSAID",
+      "atc_code": "M01AE01",
+      "indications": [
+        "发热",
+        "轻中度疼痛",
+        "炎症"
+      ],
+      "standard_dose": {
+        "adult": "0.4g PO tid prn"
+      },
+      "renal_adjustment": {
+        "egfr_lt_60": "慎用",
+        "egfr_lt_30": "禁用",
+        "dialysis": "禁用"
+      },
+      "hepatic_adjustment": {
+        "severe": "禁用"
+      },
+      "pregnancy_category": "C（早中孕）/D（晚孕）",
+      "lactation": "可用",
+      "contraindications": [
+        "消化道溃疡活动期",
+        "严重肾损",
+        "心力衰竭",
+        "晚孕"
+      ],
+      "qt_prolongation_risk": "none",
+      "common_adverse_effects": [
+        "胃肠道反应",
+        "肾损",
+        "心血管事件"
+      ],
+      "warnings": [
+        "肾功能不全患者禁用（加重肾损）"
+      ],
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无"
+    },
+    "右美沙芬": {
+      "generic_name": "右美沙芬",
+      "english_name": "dextromethorphan",
+      "drug_class": "antitussive",
+      "atc_code": "R05DA09",
+      "indications": [
+        "干咳"
+      ],
+      "standard_dose": {
+        "adult": "15-30 mg PO tid"
+      },
+      "renal_adjustment": {
+        "any": "无需调整"
+      },
+      "hepatic_adjustment": {
+        "severe": "慎用"
+      },
+      "pregnancy_category": "C",
+      "lactation": "可用",
+      "contraindications": [
+        "MAOI 联用",
+        "对组分过敏"
+      ],
+      "qt_prolongation_risk": "none",
+      "common_adverse_effects": [
+        "嗜睡",
+        "头晕"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无"
+    },
+    "氨溴索": {
+      "generic_name": "氨溴索",
+      "english_name": "ambroxol",
+      "drug_class": "expectorant",
+      "atc_code": "R05CB06",
+      "indications": [
+        "痰多咳嗽（有痰咳）"
+      ],
+      "standard_dose": {
+        "adult": "30mg PO tid 或 30mg IV-drip tid"
+      },
+      "renal_adjustment": {
+        "egfr_lt_30": "延长间隔"
+      },
+      "hepatic_adjustment": {
+        "severe": "慎用"
+      },
+      "pregnancy_category": "B",
+      "lactation": "可用",
+      "contraindications": [
+        "对氨溴索过敏"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无"
+    },
+    "奥美拉唑": {
+      "generic_name": "奥美拉唑",
+      "english_name": "omeprazole",
+      "drug_class": "PPI",
+      "atc_code": "A02BC01",
+      "indications": [
+        "消化性溃疡",
+        "急性胃炎",
+        "GERD",
+        "幽门螺杆菌根除"
+      ],
+      "standard_dose": {
+        "adult": "20mg PO qd（早餐前 30min）× 3-5d 或更长"
+      },
+      "renal_adjustment": {
+        "any": "无需调整"
+      },
+      "hepatic_adjustment": {
+        "severe": "20mg qd"
+      },
+      "pregnancy_category": "C",
+      "lactation": "慎用",
+      "contraindications": [
+        "对 PPI 过敏"
+      ],
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无"
+    },
+    "铝碳酸镁": {
+      "generic_name": "铝碳酸镁",
+      "english_name": "hydrotalcite",
+      "drug_class": "antacid",
+      "atc_code": "A02AD02",
+      "indications": [
+        "急性胃炎",
+        "胃食管反流",
+        "消化性溃疡辅助治疗"
+      ],
+      "standard_dose": {
+        "adult": "1g 嚼服 tid（饭后 1-2h）"
+      },
+      "renal_adjustment": {
+        "egfr_lt_30": "慎用（铝蓄积）"
+      },
+      "hepatic_adjustment": {
+        "any": "无需调整"
+      },
+      "pregnancy_category": "B",
+      "contraindications": [
+        "严重肾功能不全"
+      ],
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无"
+    },
+    "蒙脱石散": {
+      "generic_name": "蒙脱石散",
+      "english_name": "diosmectite",
+      "drug_class": "intestinal_adsorbent",
+      "atc_code": "A07BC05",
+      "indications": [
+        "急性/慢性腹泻"
+      ],
+      "standard_dose": {
+        "adult": "3g PO tid"
+      },
+      "pregnancy_category": "B",
+      "warnings": [
+        "强吸附性，与其他口服药需间隔 ≥ 1-2h",
+        "不用于急性胃炎常规治疗"
+      ],
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无"
+    },
+    "庆大霉素普鲁卡因维B12颗粒": {
+      "generic_name": "庆大霉素普鲁卡因维B12颗粒",
+      "drug_class": "compound_aminoglycoside",
+      "atc_code": "—",
+      "indications": [
+        "（说明书：胃肠道感染辅助治疗）实际临床指征极窄，多数被认为不合理用药"
+      ],
+      "standard_dose": {
+        "adult": "1包 PO bid"
+      },
+      "warnings": [
+        "氨基糖苷类潜在耳毒性/肾毒性",
+        "普鲁卡因过敏风险",
+        "维生素B12 与急性胃炎无关",
+        "急性单纯性胃炎使用属不合理"
+      ],
+      "nrdl_category": "NOT_LISTED",
+      "reimbursement_restriction": "未纳入医保（复方制剂，部分省份已踢出）"
+    },
+    "多潘立酮": {
+      "generic_name": "多潘立酮",
+      "english_name": "domperidone",
+      "drug_class": "prokinetic",
+      "atc_code": "A03FA03",
+      "indications": [
+        "恶心呕吐",
+        "胃排空延迟"
+      ],
+      "standard_dose": {
+        "adult": "10mg PO tid（饭前 15-30min）"
+      },
+      "qt_prolongation_risk": "moderate",
+      "contraindications": [
+        "QT 延长",
+        "严重肝功能不全"
+      ],
+      "warnings": [
+        "QT 延长风险，与其他 QT 延长药联用慎重"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无"
+    },
+    "头孢呋辛酯": {
+      "generic_name": "头孢呋辛酯",
+      "english_name": "cefuroxime axetil",
+      "drug_class": "cephalosporin_2nd",
+      "indications": [
+        "上呼吸道感染（细菌性）",
+        "下呼吸道感染",
+        "皮肤软组织感染",
+        "泌尿系感染"
+      ],
+      "standard_dose": {
+        "adult": "0.25-0.5g PO bid × 5-7d"
+      },
+      "renal_adjustment": {
+        "egfr_lt_30": "0.25g q24h"
+      },
+      "pregnancy_category": "B",
+      "lactation": "可用",
+      "contraindications": [
+        "对头孢类过敏",
+        "对青霉素类严重过敏（交叉风险）"
+      ],
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无"
+    },
+    "奥司他韦": {
+      "generic_name": "奥司他韦",
+      "english_name": "oseltamivir",
+      "drug_class": "neuraminidase_inhibitor",
+      "indications": [
+        "流感（A/B型，发病 48h 内最有效）"
+      ],
+      "standard_dose": {
+        "adult": "75mg PO bid × 5d"
+      },
+      "renal_adjustment": {
+        "crcl_30_60": "30mg PO bid",
+        "crcl_10_30": "30mg PO qd",
+        "dialysis": "30mg 透析后给"
+      },
+      "pregnancy_category": "C",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "限流感（且发热 < 48h 内）"
+    }
+  }
+}

@@ -1,0 +1,249 @@
+[
+  {
+    "timestamp": "2026-05-31T13:00:38.340787",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0118",
+      "patient_id": "P0000567",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T15:02:18"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T13:01:04.046074",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0118",
+      "patient_id": "P0000567",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T15:02:18"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T13:01:10.862850",
+    "endpoint": "/api/v1/patients/P0000567",
+    "method": "GET",
+    "request": {
+      "patient_id": "P0000567"
+    },
+    "response": {
+      "patient_id": "P0000567",
+      "name_masked": "周*",
+      "age": 32,
+      "sex": "female",
+      "weight_kg": 58,
+      "height_cm": 162,
+      "pregnancy_status": "none",
+      "allergies": [],
+      "comorbidities": [],
+      "current_medications": [],
+      "vitals": {
+        "temperature_c": 38.2,
+        "pulse_bpm": 96,
+        "respiration_per_min": 20,
+        "blood_pressure": "118/74",
+        "spo2_percent": 98
+      },
+      "physical_exam": {
+        "consciousness": "清醒",
+        "throat": "咽部轻度充血，无脓苔，扁桃体 I 度肿大",
+        "lung_auscultation": "呼吸音正常，未闻及啰音",
+        "lymph_nodes": "颈部浅表淋巴结无肿大"
+      },
+      "labs": [
+        {
+          "name": "白细胞计数 (WBC)",
+          "value": 6.8,
+          "unit": "10^9/L",
+          "ref_range": "3.5-9.5",
+          "is_abnormal": false
+        },
+        {
+          "name": "中性粒细胞百分比 (N%)",
+          "value": 58,
+          "unit": "%",
+          "ref_range": "40-75",
+          "is_abnormal": false
+        },
+        {
+          "name": "C 反应蛋白 (CRP)",
+          "value": 8.4,
+          "unit": "mg/L",
+          "ref_range": "<10",
+          "is_abnormal": false
+        }
+      ],
+      "imaging": [],
+      "renal_function": {
+        "egfr": 98,
+        "crcl": 105,
+        "dialysis": false
+      },
+      "hepatic_function": "normal",
+      "chief_complaint": "咳嗽咽痛 4 天，外院已开药",
+      "present_illness": "4 天前出现咽痛、咳嗽，咳少量白痰，间断低热（最高 38.2℃）。2 天前在某社区诊所就诊，医生开具静脉输液处方（莫西沙星+阿奇霉素）共 2 天，用药 1 天后患者自感症状无明显改善且出现心悸不适，自行停药并转来本院就诊。",
+      "referring_records": [
+        {
+          "source": "外院（XX社区卫生服务中心）",
+          "date": "2026-05-28",
+          "prescriptions": [
+            {
+              "generic_name": "莫西沙星氯化钠注射液",
+              "dose": "0.4g",
+              "route": "IV-drip",
+              "frequency": "qd",
+              "duration_days": 2
+            },
+            {
+              "generic_name": "阿奇霉素",
+              "dose": "0.5g",
+              "route": "IV-drip",
+              "frequency": "qd",
+              "duration_days": 2,
+              "diluent": "0.9%氯化钠注射液 250ml"
+            }
+          ],
+          "patient_self_report": "用药 1 天后出现心悸，自行停药"
+        }
+      ],
+      "encounter": {
+        "encounter_id": "ENC-20260530-0118",
+        "department": "全科门诊",
+        "physician_id": "DOC-2138",
+        "physician_diagnosis": [
+          {
+            "icd10": "J06.9",
+            "name": "急性上呼吸道感染",
+            "is_primary": true
+          }
+        ],
+        "started_at": "2026-05-30T15:02:18",
+        "physician_note": "病人自带外院处方就诊。请依据本院 EMR 重新评估并开方。"
+      }
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T13:01:51.669505",
+    "endpoint": "/api/v1/drugs/������������",
+    "method": "GET",
+    "request": {
+      "drug_name": "������������"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "������������"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T13:02:00.200355",
+    "endpoint": "/api/v1/drugs/paracetamol",
+    "method": "GET",
+    "request": {
+      "drug_name": "paracetamol"
+    },
+    "response": {
+      "generic_name": "对乙酰氨基酚",
+      "english_name": "paracetamol",
+      "drug_class": "analgesic_antipyretic",
+      "atc_code": "N02BE01",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T13:02:00.262505",
+    "endpoint": "/api/v1/drugs/ibuprofen",
+    "method": "GET",
+    "request": {
+      "drug_name": "ibuprofen"
+    },
+    "response": {
+      "generic_name": "布洛芬",
+      "english_name": "ibuprofen",
+      "drug_class": "NSAID",
+      "atc_code": "M01AE01",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T13:02:26.125302",
+    "endpoint": "/api/v1/prescriptions",
+    "method": "POST",
+    "request": {
+      "patient_id": "P0000345",
+      "encounter_id": "ENC-20260530-0073",
+      "diagnosis": [
+        {
+          "icd10": "J18.1",
+          "name": "大叶性肺炎（社区获得性肺炎）",
+          "is_primary": true
+        },
+        {
+          "icd10": "N18.6",
+          "name": "终末期肾病",
+          "is_primary": false
+        }
+      ],
+      "prescription_items": [
+        {
+          "generic_name": "阿奇霉素",
+          "specification": "0.25g/片",
+          "dose": 500,
+          "dose_unit": "mg",
+          "frequency": "qd",
+          "route": "PO",
+          "duration_days": 3,
+          "total_quantity": "6片",
+          "instructions": "首日500mg，之后250mg qd",
+          "indication": "J18.1"
+        }
+      ],
+      "non_drug_advice": [
+        "多饮水",
+        "监测体温"
+      ],
+      "clinical_reasoning": "ESRD血透患者，青霉素过敏，选择阿奇霉素口服治疗CAP",
+      "explicit_avoidance": [
+        {
+          "drug_or_class": "青霉素类",
+          "reason": "过敏史"
+        }
+      ]
+    },
+    "response": {
+      "prescription_id": "RX-20260531-0001",
+      "status": "submitted",
+      "warnings": [
+        {
+          "level": "info",
+          "type": "renal_adjustment_required",
+          "message": "病人为血液透析患者，阿奇霉素 需按肾功能调整剂量。说明书建议：{\"egfr_lt_30\": \"慎用\", \"dialysis\": \"慎用\"}"
+        }
+      ],
+      "submitted_at": "2026-05-31T13:02:26.125280"
+    },
+    "status_code": 201,
+    "latency_ms": 1
+  }
+]

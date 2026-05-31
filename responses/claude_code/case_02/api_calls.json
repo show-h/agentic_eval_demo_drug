@@ -1,0 +1,602 @@
+[
+  {
+    "timestamp": "2026-05-31T10:56:15.783975",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0058",
+      "patient_id": "P0000234",
+      "department": "呼吸内科",
+      "physician_id": "DOC-3041",
+      "started_at": "2026-05-30T10:22:11"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:56:32.948053",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0058",
+      "patient_id": "P0000234",
+      "department": "呼吸内科",
+      "physician_id": "DOC-3041",
+      "started_at": "2026-05-30T10:22:11"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:56:33.764583",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0058",
+      "patient_id": "P0000234",
+      "department": "呼吸内科",
+      "physician_id": "DOC-3041",
+      "started_at": "2026-05-30T10:22:11"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:56:39.480164",
+    "endpoint": "/api/v1/patients/P0000234",
+    "method": "GET",
+    "request": {
+      "patient_id": "P0000234"
+    },
+    "response": {
+      "patient_id": "P0000234",
+      "name_masked": "李*",
+      "age": 20,
+      "sex": "male",
+      "weight_kg": 65,
+      "height_cm": 178,
+      "pregnancy_status": "none",
+      "allergies": [],
+      "comorbidities": [
+        {
+          "name": "支气管哮喘",
+          "icd10": "J45.9",
+          "since": "2018-03",
+          "control_level": "未规律用药"
+        }
+      ],
+      "current_medications": [],
+      "vitals": {
+        "temperature_c": 36.8,
+        "pulse_bpm": 92,
+        "respiration_per_min": 22,
+        "blood_pressure": "122/78",
+        "spo2_percent": 96
+      },
+      "physical_exam": {
+        "consciousness": "清醒",
+        "lung_auscultation": "双肺可闻及哮鸣音",
+        "respiratory_distress": "无明显气促",
+        "cyanosis": "无紫绀"
+      },
+      "labs": [
+        {
+          "name": "血气 SpO2",
+          "value": 96,
+          "unit": "%",
+          "ref_range": ">95",
+          "is_abnormal": false
+        }
+      ],
+      "imaging": [],
+      "renal_function": {
+        "egfr": 112,
+        "crcl": 118,
+        "dialysis": false
+      },
+      "hepatic_function": "normal",
+      "chief_complaint": "气喘胸闷加重 3 天",
+      "present_illness": "既往哮喘病史 8 年，未长期规律使用控制药物。3 天前接触花粉后再次出现气喘胸闷，活动后加重，自行使用 5 年前剩余的沙美特罗/氟替卡松吸入剂未缓解。",
+      "encounter": {
+        "encounter_id": "ENC-20260530-0058",
+        "department": "呼吸内科",
+        "physician_id": "DOC-3041",
+        "physician_diagnosis": [
+          {
+            "icd10": "J45.901",
+            "name": "支气管哮喘急性发作（轻中度）",
+            "is_primary": true
+          }
+        ],
+        "started_at": "2026-05-30T10:22:11"
+      }
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:02.787986",
+    "endpoint": "/api/v1/drugs/沙丁胺醇",
+    "method": "GET",
+    "request": {
+      "drug_name": "沙丁胺醇"
+    },
+    "response": {
+      "generic_name": "沙丁胺醇",
+      "english_name": "salbutamol",
+      "drug_class": "SABA",
+      "atc_code": "R03AC02",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:03.700600",
+    "endpoint": "/api/v1/drugs/沙丁胺醇",
+    "method": "GET",
+    "request": {
+      "drug_name": "沙丁胺醇"
+    },
+    "response": {
+      "generic_name": "沙丁胺醇",
+      "english_name": "salbutamol",
+      "drug_class": "SABA",
+      "atc_code": "R03AC02",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:04.706532",
+    "endpoint": "/api/v1/drugs/布地奈德福莫特罗",
+    "method": "GET",
+    "request": {
+      "drug_name": "布地奈德福莫特罗"
+    },
+    "response": {
+      "generic_name": "布地奈德福莫特罗",
+      "english_name": "budesonide-formoterol",
+      "drug_class": "LABA_ICS_MART",
+      "atc_code": "R03AK07",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "限哮喘、COPD",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:05.605930",
+    "endpoint": "/api/v1/drugs/布地奈德福莫特罗",
+    "method": "GET",
+    "request": {
+      "drug_name": "布地奈德福莫特罗"
+    },
+    "response": {
+      "generic_name": "布地奈德福莫特罗",
+      "english_name": "budesonide-formoterol",
+      "drug_class": "LABA_ICS_MART",
+      "atc_code": "R03AK07",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "限哮喘、COPD",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:06.561917",
+    "endpoint": "/api/v1/drugs/泼尼松",
+    "method": "GET",
+    "request": {
+      "drug_name": "泼尼松"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "泼尼松"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:07.425524",
+    "endpoint": "/api/v1/drugs/泼尼松",
+    "method": "GET",
+    "request": {
+      "drug_name": "泼尼松"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "泼尼松"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:08.310943",
+    "endpoint": "/api/v1/drugs/孟鲁司特",
+    "method": "GET",
+    "request": {
+      "drug_name": "孟鲁司特"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "孟鲁司特"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:24.175167",
+    "endpoint": "/api/v1/drugs/甲基泼尼松",
+    "method": "GET",
+    "request": {
+      "drug_name": "甲基泼尼松"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "甲基泼尼松"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:25.026945",
+    "endpoint": "/api/v1/drugs/甲基泼尼松",
+    "method": "GET",
+    "request": {
+      "drug_name": "甲基泼尼松"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "甲基泼尼松"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:25.924694",
+    "endpoint": "/api/v1/drugs/prednisone",
+    "method": "GET",
+    "request": {
+      "drug_name": "prednisone"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "prednisone"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:26.726420",
+    "endpoint": "/api/v1/drugs/prednisone",
+    "method": "GET",
+    "request": {
+      "drug_name": "prednisone"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "prednisone"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:27.530759",
+    "endpoint": "/api/v1/drugs/异丙托溴氨",
+    "method": "GET",
+    "request": {
+      "drug_name": "异丙托溴氨"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "异丙托溴氨"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:36.850870",
+    "endpoint": "/api/v1/drugs/强皮松",
+    "method": "GET",
+    "request": {
+      "drug_name": "强皮松"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "强皮松"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:37.800869",
+    "endpoint": "/api/v1/drugs/强皮松",
+    "method": "GET",
+    "request": {
+      "drug_name": "强皮松"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "强皮松"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:38.645697",
+    "endpoint": "/api/v1/drugs/甲泼",
+    "method": "GET",
+    "request": {
+      "drug_name": "甲泼"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "甲泼"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:54.210249",
+    "endpoint": "/api/v1/drugs/methylprednisolone",
+    "method": "GET",
+    "request": {
+      "drug_name": "methylprednisolone"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "methylprednisolone"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:55.036367",
+    "endpoint": "/api/v1/drugs/methylprednisolone",
+    "method": "GET",
+    "request": {
+      "drug_name": "methylprednisolone"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "methylprednisolone"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:55.890600",
+    "endpoint": "/api/v1/drugs/泼尼松龙",
+    "method": "GET",
+    "request": {
+      "drug_name": "泼尼松龙"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "泼尼松龙"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:56.700461",
+    "endpoint": "/api/v1/drugs/泼尼松龙",
+    "method": "GET",
+    "request": {
+      "drug_name": "泼尼松龙"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "泼尼松龙"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:57:57.554582",
+    "endpoint": "/api/v1/drugs/布地奈德",
+    "method": "GET",
+    "request": {
+      "drug_name": "布地奈德"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "布地奈德"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:12.221203",
+    "endpoint": "/api/v1/drugs/泼尼松片",
+    "method": "GET",
+    "request": {
+      "drug_name": "泼尼松片"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "泼尼松片"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:13.332242",
+    "endpoint": "/api/v1/drugs/泼尼松片",
+    "method": "GET",
+    "request": {
+      "drug_name": "泼尼松片"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "泼尼松片"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:14.365429",
+    "endpoint": "/api/v1/drugs/口服激素",
+    "method": "GET",
+    "request": {
+      "drug_name": "口服激素"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "口服激素"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:26.460316",
+    "endpoint": "/api/v1/drugs/多毛洛尔",
+    "method": "GET",
+    "request": {
+      "drug_name": "多毛洛尔"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "多毛洛尔"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:27.376209",
+    "endpoint": "/api/v1/drugs/多毛洛尔",
+    "method": "GET",
+    "request": {
+      "drug_name": "多毛洛尔"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "多毛洛尔"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:28.306188",
+    "endpoint": "/api/v1/drugs/地塞米松",
+    "method": "GET",
+    "request": {
+      "drug_name": "地塞米松"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "地塞米松"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:29.243152",
+    "endpoint": "/api/v1/drugs/地塞米松",
+    "method": "GET",
+    "request": {
+      "drug_name": "地塞米松"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "地塞米松"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:30.143467",
+    "endpoint": "/api/v1/drugs/局方性甲基泼尼松",
+    "method": "GET",
+    "request": {
+      "drug_name": "局方性甲基泼尼松"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "局方性甲基泼尼松"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:47.121274",
+    "endpoint": "/api/v1/drugs/激素",
+    "method": "GET",
+    "request": {
+      "drug_name": "激素"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "激素"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:48.011414",
+    "endpoint": "/api/v1/drugs/激素",
+    "method": "GET",
+    "request": {
+      "drug_name": "激素"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "激素"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:48.762298",
+    "endpoint": "/api/v1/drugs/处方元",
+    "method": "GET",
+    "request": {
+      "drug_name": "处方元"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "处方元"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:49.648495",
+    "endpoint": "/api/v1/drugs/处方元",
+    "method": "GET",
+    "request": {
+      "drug_name": "处方元"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "处方元"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:58:50.519681",
+    "endpoint": "/api/v1/drugs/甲泼尼龙",
+    "method": "GET",
+    "request": {
+      "drug_name": "甲泼尼龙"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "甲泼尼龙"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  }
+]

@@ -1,0 +1,472 @@
+[
+  {
+    "timestamp": "2026-05-31T11:06:01.619115",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0091",
+      "patient_id": "P0000456",
+      "department": "消化内科",
+      "physician_id": "DOC-7042",
+      "started_at": "2026-05-30T13:45:02"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:02.430367",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0091",
+      "patient_id": "P0000456",
+      "department": "消化内科",
+      "physician_id": "DOC-7042",
+      "started_at": "2026-05-30T13:45:02"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:08.528632",
+    "endpoint": "/api/v1/patients/P0000456",
+    "method": "GET",
+    "request": {
+      "patient_id": "P0000456"
+    },
+    "response": {
+      "patient_id": "P0000456",
+      "name_masked": "张*",
+      "age": 23,
+      "sex": "male",
+      "weight_kg": 72,
+      "height_cm": 180,
+      "pregnancy_status": "none",
+      "allergies": [],
+      "comorbidities": [],
+      "current_medications": [],
+      "vitals": {
+        "temperature_c": 36.9,
+        "pulse_bpm": 88,
+        "respiration_per_min": 18,
+        "blood_pressure": "126/78",
+        "spo2_percent": 98
+      },
+      "physical_exam": {
+        "consciousness": "清醒",
+        "abdomen": "上腹部压痛阳性，无反跳痛及肌紧张",
+        "bowel_sounds": "肠鸣音正常",
+        "vomitus": "胃内容物，无血液无咖啡渣样物"
+      },
+      "labs": [
+        {
+          "name": "白细胞计数 (WBC)",
+          "value": 8.2,
+          "unit": "10^9/L",
+          "ref_range": "3.5-9.5",
+          "is_abnormal": false
+        },
+        {
+          "name": "中性粒细胞百分比 (N%)",
+          "value": 65,
+          "unit": "%",
+          "ref_range": "40-75",
+          "is_abnormal": false
+        }
+      ],
+      "imaging": [],
+      "renal_function": {
+        "egfr": 108,
+        "crcl": 115,
+        "dialysis": false
+      },
+      "hepatic_function": "normal",
+      "chief_complaint": "上腹部疼痛伴恶心呕吐 2 天",
+      "present_illness": "2 天前进食大量辛辣火锅+冰啤酒后出现上腹部持续性隐痛，伴恶心、呕吐胃内容物 3-4 次，无呕血黑便。无慢性胃病史，近期无饮酒（仅当晚）和服药史。",
+      "encounter": {
+        "encounter_id": "ENC-20260530-0091",
+        "department": "消化内科",
+        "physician_id": "DOC-7042",
+        "physician_diagnosis": [
+          {
+            "icd10": "K29.1",
+            "name": "急性单纯性胃炎（理化因素刺激所致）",
+            "is_primary": true
+          }
+        ],
+        "started_at": "2026-05-30T13:45:02"
+      }
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:09.361119",
+    "endpoint": "/api/v1/patients/P0000456",
+    "method": "GET",
+    "request": {
+      "patient_id": "P0000456"
+    },
+    "response": {
+      "patient_id": "P0000456",
+      "name_masked": "张*",
+      "age": 23,
+      "sex": "male",
+      "weight_kg": 72,
+      "height_cm": 180,
+      "pregnancy_status": "none",
+      "allergies": [],
+      "comorbidities": [],
+      "current_medications": [],
+      "vitals": {
+        "temperature_c": 36.9,
+        "pulse_bpm": 88,
+        "respiration_per_min": 18,
+        "blood_pressure": "126/78",
+        "spo2_percent": 98
+      },
+      "physical_exam": {
+        "consciousness": "清醒",
+        "abdomen": "上腹部压痛阳性，无反跳痛及肌紧张",
+        "bowel_sounds": "肠鸣音正常",
+        "vomitus": "胃内容物，无血液无咖啡渣样物"
+      },
+      "labs": [
+        {
+          "name": "白细胞计数 (WBC)",
+          "value": 8.2,
+          "unit": "10^9/L",
+          "ref_range": "3.5-9.5",
+          "is_abnormal": false
+        },
+        {
+          "name": "中性粒细胞百分比 (N%)",
+          "value": 65,
+          "unit": "%",
+          "ref_range": "40-75",
+          "is_abnormal": false
+        }
+      ],
+      "imaging": [],
+      "renal_function": {
+        "egfr": 108,
+        "crcl": 115,
+        "dialysis": false
+      },
+      "hepatic_function": "normal",
+      "chief_complaint": "上腹部疼痛伴恶心呕吐 2 天",
+      "present_illness": "2 天前进食大量辛辣火锅+冰啤酒后出现上腹部持续性隐痛，伴恶心、呕吐胃内容物 3-4 次，无呕血黑便。无慢性胃病史，近期无饮酒（仅当晚）和服药史。",
+      "encounter": {
+        "encounter_id": "ENC-20260530-0091",
+        "department": "消化内科",
+        "physician_id": "DOC-7042",
+        "physician_diagnosis": [
+          {
+            "icd10": "K29.1",
+            "name": "急性单纯性胃炎（理化因素刺激所致）",
+            "is_primary": true
+          }
+        ],
+        "started_at": "2026-05-30T13:45:02"
+      }
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:32.875672",
+    "endpoint": "/api/v1/drugs/��������",
+    "method": "GET",
+    "request": {
+      "drug_name": "��������"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "��������"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:33.753292",
+    "endpoint": "/api/v1/drugs/��������",
+    "method": "GET",
+    "request": {
+      "drug_name": "��������"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "��������"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:34.599335",
+    "endpoint": "/api/v1/drugs/������ͪ",
+    "method": "GET",
+    "request": {
+      "drug_name": "������ͪ"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "������ͪ"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:35.418555",
+    "endpoint": "/api/v1/drugs/������ͪ",
+    "method": "GET",
+    "request": {
+      "drug_name": "������ͪ"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "������ͪ"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:36.248932",
+    "endpoint": "/api/v1/drugs/��̼��þ",
+    "method": "GET",
+    "request": {
+      "drug_name": "��̼��þ"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "��̼��þ"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:47.589484",
+    "endpoint": "/api/v1/drugs/奥美拉唑",
+    "method": "GET",
+    "request": {
+      "drug_name": "奥美拉唑"
+    },
+    "response": {
+      "generic_name": "奥美拉唑",
+      "english_name": "omeprazole",
+      "drug_class": "PPI",
+      "atc_code": "A02BC01",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:06:57.174267",
+    "endpoint": "/api/v1/drugs/多潘立酮",
+    "method": "GET",
+    "request": {
+      "drug_name": "多潘立酮"
+    },
+    "response": {
+      "generic_name": "多潘立酮",
+      "english_name": "domperidone",
+      "drug_class": "prokinetic",
+      "atc_code": "A03FA03",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:07:01.085886",
+    "endpoint": "/api/v1/drugs/多潘立酮",
+    "method": "GET",
+    "request": {
+      "drug_name": "多潘立酮"
+    },
+    "response": {
+      "generic_name": "多潘立酮",
+      "english_name": "domperidone",
+      "drug_class": "prokinetic",
+      "atc_code": "A03FA03",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:07:05.263431",
+    "endpoint": "/api/v1/drugs/铝碳酸镁",
+    "method": "GET",
+    "request": {
+      "drug_name": "铝碳酸镁"
+    },
+    "response": {
+      "generic_name": "铝碳酸镁",
+      "english_name": "hydrotalcite",
+      "drug_class": "antacid",
+      "atc_code": "A02AD02",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:07:09.238031",
+    "endpoint": "/api/v1/drugs/铝碳酸镁",
+    "method": "GET",
+    "request": {
+      "drug_name": "铝碳酸镁"
+    },
+    "response": {
+      "generic_name": "铝碳酸镁",
+      "english_name": "hydrotalcite",
+      "drug_class": "antacid",
+      "atc_code": "A02AD02",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:07:13.535514",
+    "endpoint": "/api/v1/drugs/雷贝拉唑",
+    "method": "GET",
+    "request": {
+      "drug_name": "雷贝拉唑"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "雷贝拉唑"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T11:08:07.790528",
+    "endpoint": "/api/v1/prescriptions",
+    "method": "POST",
+    "request": {
+      "patient_id": "P0000456",
+      "encounter_id": "ENC-20260530-0091",
+      "diagnosis": [
+        {
+          "icd10": "K29.1",
+          "name": "急性单纯性胃炎（理化因素刺激所致）",
+          "is_primary": true
+        }
+      ],
+      "prescription_items": [
+        {
+          "generic_name": "奥美拉唑",
+          "specification": "20mg/粒",
+          "dose": 20,
+          "dose_unit": "mg",
+          "frequency": "qd",
+          "route": "PO",
+          "duration_days": 7,
+          "total_quantity": "7粒",
+          "instructions": "晨起空腹（早餐前30分钟）整粒吞服，勿嚼碎",
+          "indication": "K29.1 急性胃炎-抑酸保护胃黏膜"
+        },
+        {
+          "generic_name": "铝碳酸镁",
+          "specification": "0.5g/片",
+          "dose": 1,
+          "dose_unit": "g",
+          "frequency": "tid",
+          "route": "PO",
+          "duration_days": 7,
+          "total_quantity": "42片",
+          "instructions": "餐后1-2小时及睡前嚼服；与奥美拉唑、多潘立酮服用时间间隔≥1小时，避免影响其他药物吸收",
+          "indication": "K29.1 中和胃酸+保护胃黏膜，缓解上腹痛"
+        },
+        {
+          "generic_name": "多潘立酮",
+          "specification": "10mg/片",
+          "dose": 10,
+          "dose_unit": "mg",
+          "frequency": "tid",
+          "route": "PO",
+          "duration_days": 5,
+          "total_quantity": "15片",
+          "instructions": "三餐前15-30分钟服用；症状缓解（恶心呕吐消失）后即停，避免长期使用",
+          "indication": "K29.1 伴恶心呕吐-促胃肠动力对症"
+        }
+      ],
+      "non_drug_advice": [
+        "近期严格清淡饮食：避免辛辣、油腻、过烫、过冷食物，避免咖啡、浓茶、碳酸饮料",
+        "完全戒酒至症状完全缓解后至少 1-2 周",
+        "少食多餐，进食细嚼慢咽，避免暴饮暴食和睡前 2 小时内进食",
+        "注意休息，避免熬夜及精神紧张",
+        "若 5-7 天症状无明显缓解或加重，需消化内科复诊；如出现呕血、黑便、剧烈腹痛、持续高热、明显消瘦，应立即急诊就诊"
+      ],
+      "clinical_reasoning": "病人 23 岁青年男性，72kg，无过敏史、无合并症、无长期用药、肝肾功能正常（eGFR 108、CrCl 115、肝功能正常）。主诊断为 K29.1 急性单纯性胃炎，明确诱因为大量辛辣火锅+冰啤酒刺激所致；体征仅上腹压痛、无反跳痛/肌紧张、肠鸣音正常、无呕血黑便、生命体征平稳、WBC 与 N% 正常，无感染性或外科急腹症征象，无 H. pylori 检测/治疗指征。\n\n治疗以抑酸+黏膜保护+对症止吐为核心：(1) 奥美拉唑 20mg PO qd 晨起空腹×7 天，标准剂量足以快速抑酸、缓解上腹痛并促进胃黏膜修复，PO 给药足够，无需 IV，价格便宜且为医保甲类。(2) 铝碳酸镁 1.0g 嚼服 tid（餐后及睡前）增加快速中和胃酸+黏附保护胃黏膜的效果，与 PPI 联合可缓解 PPI 起效前 1-2 天的酸相关症状；与其他口服药间隔≥1 小时以避免影响吸收（甲类）。(3) 多潘立酮 10mg PO tid 餐前×5 天对症缓解恶心呕吐，按需短程使用，症状缓解即停，避免心律相关风险长期累积；病人年轻、无心脏病史、无电解质异常、未合用 CYP3A4 强抑制剂或 QT 延长药物，短期使用风险低（医保乙类，限于呕吐患者，符合限制条件）。\n\n特殊人群匹配：青年男性、无肝肾功能损伤，所选三药均无需调量；无过敏史、无合并用药，无相互作用顾虑；非孕妇/哺乳期。监测计划：用药 3-5 天电话/自行评估腹痛、恶心呕吐缓解情况；若 5-7 天未明显改善或出现报警征象（呕血、黑便、持续高热、剧烈腹痛、明显消瘦）立即复诊/急诊，并考虑胃镜及 H. pylori 检测。",
+      "explicit_avoidance": [
+        {
+          "drug_or_class": "抗生素（含 H. pylori 根除四联）",
+          "reason": "明确为理化因素刺激所致急性胃炎，无感染征象（WBC/N% 正常、无发热），无慢性胃炎/溃疡史，本次无 H. pylori 检测/根除指征"
+        },
+        {
+          "drug_or_class": "NSAIDs（如布洛芬等）止痛药",
+          "reason": "NSAIDs 损伤胃黏膜会加重急性胃炎，本病非首选镇痛指征，腹痛通过抑酸+黏膜保护即可缓解"
+        },
+        {
+          "drug_or_class": "糖皮质激素",
+          "reason": "无适应症，且会加重胃黏膜损伤"
+        },
+        {
+          "drug_or_class": "甲氧氯普胺（胃复安）",
+          "reason": "止吐效果与多潘立酮相近但锥体外系反应风险更高（尤其青壮年），且青年男性日常活动多，优选多潘立酮"
+        },
+        {
+          "drug_or_class": "静脉 PPI / 静脉补液",
+          "reason": "病人神清、生命体征平稳、能口服、无脱水征象、无消化道出血，门诊口服治疗足够，无需静脉给药"
+        },
+        {
+          "drug_or_class": "H2 受体阻滞剂（雷尼替丁/法莫替丁）",
+          "reason": "抑酸强度弱于 PPI，且急性胃炎抑酸首选 PPI；非必要时不与 PPI 联用"
+        },
+        {
+          "drug_or_class": "硫糖铝",
+          "reason": "已使用铝碳酸镁起到黏膜保护作用，无需重复联用同类药；硫糖铝需空腹多次服用，依从性较差"
+        },
+        {
+          "drug_or_class": "解痉药（如颠茄、山莨菪碱）",
+          "reason": "腹痛为非痉挛性隐痛，无肠绞痛表现，无解痉指征"
+        }
+      ],
+      "follow_up": {
+        "next_visit_days": 7,
+        "red_flags": [
+          "呕血或咖啡渣样呕吐物",
+          "黑便或便血",
+          "剧烈持续性腹痛或腹痛加剧、出现反跳痛/肌紧张",
+          "持续高热（>38.5℃）",
+          "明显脱水/无法进食饮水",
+          "明显消瘦或乏力加重"
+        ]
+      }
+    },
+    "response": {
+      "prescription_id": "RX-20260531-0001",
+      "status": "submitted",
+      "warnings": [],
+      "submitted_at": "2026-05-31T11:08:07.790507"
+    },
+    "status_code": 201,
+    "latency_ms": 1
+  }
+]

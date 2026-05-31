@@ -1,0 +1,68 @@
+{
+  "patient_id": "P0000123",
+  "encounter_id": "ENC-20260530-0042",
+  "diagnosis": [
+    {
+      "icd10": "J06.9",
+      "name": "急性上呼吸道感染",
+      "is_primary": true
+    }
+  ],
+  "prescription_items": [
+    {
+      "generic_name": "对乙酰氨基酚",
+      "specification": "0.5g/片",
+      "dose": 0.5,
+      "dose_unit": "g",
+      "frequency": "tid",
+      "route": "PO",
+      "duration_days": 3,
+      "total_quantity": "9片",
+      "instructions": "体温>38.5℃或咽痛明显时服用，两次用药间隔至少4小时",
+      "indication": "J06.9"
+    },
+    {
+      "generic_name": "右美沙芬",
+      "specification": "15mg/片",
+      "dose": 15,
+      "dose_unit": "mg",
+      "frequency": "tid",
+      "route": "PO",
+      "duration_days": 5,
+      "total_quantity": "15片",
+      "instructions": "咳嗽明显时服用，睡前可加服一次",
+      "indication": "J06.9"
+    }
+  ],
+  "non_drug_advice": [
+    "多饮温水，每日2000ml以上",
+    "充分休息，避免劳累",
+    "保持室内空气流通",
+    "症状持续超过1周或高热不退及时复诊"
+  ],
+  "clinical_reasoning": "患者为28岁男性，急性上呼吸道感染（J06.9）。实验室检查：WBC 7.8×10^9/L（正常），CRP 4.1mg/L（正常），PCT 0.05ng/mL（正常），提示病毒性感染可能性大，无细菌感染证据，不需抗生素治疗。患者有低热（37.6℃）和咳嗽症状，予以对症处理：1）对乙酰氨基酚0.5g tid prn，用于退热及缓解咽痛，该药解热镇痛效果好，肝肾功能正常患者使用安全，医保甲类无限制；2）右美沙芬15mg tid，中枢性镇咳药，适用于干咳或咳嗽影响休息者，本患者咳嗽伴少量白痰，可选用。两药联用无相互作用。疗程：退热药不超过3天，镇咳药不超过5天。患者年轻、无基础疾病、无药物过敏史，用药风险低。",
+  "explicit_avoidance": [
+    {
+      "drug_or_class": "抗生素（阿莫西林、头孢类、大环内酯类等）",
+      "reason": "患者无细菌感染证据（WBC正常、CRP正常、PCT<0.5），病毒性上呼吸道感染无需抗生素，避免抗生素滥用"
+    },
+    {
+      "drug_or_class": "糖皮质激素",
+      "reason": "普通上呼吸道感染不建议使用全身激素，副作用大且无明确获益"
+    },
+    {
+      "drug_or_class": "复方感冒药（含多种成分的感冒灵等）",
+      "reason": "避免重复用药和不良反应叠加，症状单一用药更安全"
+    }
+  ],
+  "follow_up": {
+    "next_visit_days": 7,
+    "red_flags": [
+      "高热持续超过3天（体温>39℃）",
+      "出现呼吸困难或气促",
+      "咳黄脓痰或血痰",
+      "胸痛或吞咽困难",
+      "症状超过1周无改善或加重"
+    ]
+  }
+}

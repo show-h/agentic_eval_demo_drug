@@ -1,0 +1,374 @@
+[
+  {
+    "timestamp": "2026-05-31T10:53:46.650113",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0042",
+      "patient_id": "P0000123",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T09:14:22"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:54:05.635458",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0042",
+      "patient_id": "P0000123",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T09:14:22"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:54:06.591668",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0042",
+      "patient_id": "P0000123",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T09:14:22"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:54:12.609918",
+    "endpoint": "/api/v1/patients/P0000123",
+    "method": "GET",
+    "request": {
+      "patient_id": "P0000123"
+    },
+    "response": {
+      "patient_id": "P0000123",
+      "name_masked": "王*",
+      "age": 28,
+      "sex": "male",
+      "weight_kg": 68,
+      "height_cm": 175,
+      "pregnancy_status": "none",
+      "allergies": [],
+      "comorbidities": [],
+      "current_medications": [],
+      "vitals": {
+        "temperature_c": 37.6,
+        "pulse_bpm": 84,
+        "respiration_per_min": 18,
+        "blood_pressure": "118/76",
+        "spo2_percent": 98
+      },
+      "physical_exam": {
+        "consciousness": "清醒",
+        "lung_auscultation": "呼吸音正常，未闻及啰音",
+        "pleural_findings": "未触及胸膜摩擦音",
+        "throat": "咽部轻度充血，无脓苔"
+      },
+      "labs": [
+        {
+          "name": "白细胞计数 (WBC)",
+          "value": 7.8,
+          "unit": "10^9/L",
+          "ref_range": "3.5-9.5",
+          "is_abnormal": false
+        },
+        {
+          "name": "中性粒细胞百分比 (N%)",
+          "value": 62,
+          "unit": "%",
+          "ref_range": "40-75",
+          "is_abnormal": false
+        },
+        {
+          "name": "C 反应蛋白 (CRP)",
+          "value": 4.1,
+          "unit": "mg/L",
+          "ref_range": "<10",
+          "is_abnormal": false
+        },
+        {
+          "name": "降钙素原 (PCT)",
+          "value": 0.05,
+          "unit": "ng/mL",
+          "ref_range": "<0.5",
+          "is_abnormal": false
+        }
+      ],
+      "imaging": [],
+      "renal_function": {
+        "egfr": 105,
+        "crcl": 110,
+        "dialysis": false
+      },
+      "hepatic_function": "normal",
+      "chief_complaint": "咳嗽发热 3 天",
+      "present_illness": "3 天前受凉后出现咳嗽，少量白痰，无黄脓痰；伴低热（最高 37.8℃），自服板蓝根未见明显好转。无气促胸闷，无咯血。",
+      "encounter": {
+        "encounter_id": "ENC-20260530-0042",
+        "department": "全科门诊",
+        "physician_id": "DOC-2138",
+        "physician_diagnosis": [
+          {
+            "icd10": "J06.9",
+            "name": "急性上呼吸道感染",
+            "is_primary": true
+          }
+        ],
+        "started_at": "2026-05-30T09:14:22"
+      }
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:54:13.542665",
+    "endpoint": "/api/v1/patients/P0000123",
+    "method": "GET",
+    "request": {
+      "patient_id": "P0000123"
+    },
+    "response": {
+      "patient_id": "P0000123",
+      "name_masked": "王*",
+      "age": 28,
+      "sex": "male",
+      "weight_kg": 68,
+      "height_cm": 175,
+      "pregnancy_status": "none",
+      "allergies": [],
+      "comorbidities": [],
+      "current_medications": [],
+      "vitals": {
+        "temperature_c": 37.6,
+        "pulse_bpm": 84,
+        "respiration_per_min": 18,
+        "blood_pressure": "118/76",
+        "spo2_percent": 98
+      },
+      "physical_exam": {
+        "consciousness": "清醒",
+        "lung_auscultation": "呼吸音正常，未闻及啰音",
+        "pleural_findings": "未触及胸膜摩擦音",
+        "throat": "咽部轻度充血，无脓苔"
+      },
+      "labs": [
+        {
+          "name": "白细胞计数 (WBC)",
+          "value": 7.8,
+          "unit": "10^9/L",
+          "ref_range": "3.5-9.5",
+          "is_abnormal": false
+        },
+        {
+          "name": "中性粒细胞百分比 (N%)",
+          "value": 62,
+          "unit": "%",
+          "ref_range": "40-75",
+          "is_abnormal": false
+        },
+        {
+          "name": "C 反应蛋白 (CRP)",
+          "value": 4.1,
+          "unit": "mg/L",
+          "ref_range": "<10",
+          "is_abnormal": false
+        },
+        {
+          "name": "降钙素原 (PCT)",
+          "value": 0.05,
+          "unit": "ng/mL",
+          "ref_range": "<0.5",
+          "is_abnormal": false
+        }
+      ],
+      "imaging": [],
+      "renal_function": {
+        "egfr": 105,
+        "crcl": 110,
+        "dialysis": false
+      },
+      "hepatic_function": "normal",
+      "chief_complaint": "咳嗽发热 3 天",
+      "present_illness": "3 天前受凉后出现咳嗽，少量白痰，无黄脓痰；伴低热（最高 37.8℃），自服板蓝根未见明显好转。无气促胸闷，无咯血。",
+      "encounter": {
+        "encounter_id": "ENC-20260530-0042",
+        "department": "全科门诊",
+        "physician_id": "DOC-2138",
+        "physician_diagnosis": [
+          {
+            "icd10": "J06.9",
+            "name": "急性上呼吸道感染",
+            "is_primary": true
+          }
+        ],
+        "started_at": "2026-05-30T09:14:22"
+      }
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:54:36.316099",
+    "endpoint": "/api/v1/drugs/氨溴索",
+    "method": "GET",
+    "request": {
+      "drug_name": "氨溴索"
+    },
+    "response": {
+      "generic_name": "氨溴索",
+      "english_name": "ambroxol",
+      "drug_class": "expectorant",
+      "atc_code": "R05CB06",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:54:37.209311",
+    "endpoint": "/api/v1/drugs/氨溴索",
+    "method": "GET",
+    "request": {
+      "drug_name": "氨溴索"
+    },
+    "response": {
+      "generic_name": "氨溴索",
+      "english_name": "ambroxol",
+      "drug_class": "expectorant",
+      "atc_code": "R05CB06",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:54:38.141152",
+    "endpoint": "/api/v1/drugs/对乙酰氨基酚",
+    "method": "GET",
+    "request": {
+      "drug_name": "对乙酰氨基酚"
+    },
+    "response": {
+      "generic_name": "对乙酰氨基酚",
+      "english_name": "paracetamol",
+      "drug_class": "analgesic_antipyretic",
+      "atc_code": "N02BE01",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T10:55:47.164478",
+    "endpoint": "/api/v1/prescriptions",
+    "method": "POST",
+    "request": {
+      "patient_id": "P0000123",
+      "encounter_id": "ENC-20260530-0042",
+      "diagnosis": [
+        {
+          "icd10": "J06.9",
+          "name": "急性上呼吸道感染",
+          "is_primary": true
+        }
+      ],
+      "prescription_items": [
+        {
+          "generic_name": "对乙酰氨基酚",
+          "specification": "0.5g/片",
+          "dose": 0.5,
+          "dose_unit": "g",
+          "frequency": "prn",
+          "route": "PO",
+          "duration_days": 0,
+          "total_quantity": "6片",
+          "instructions": "体温>38.5℃或明显头痛/肌痛时服用，两次间隔≥6小时，24小时内不超过4次（≤2g/日）",
+          "indication": "发热/头身痛对症"
+        },
+        {
+          "generic_name": "氨溴索",
+          "specification": "30mg/片",
+          "dose": 30,
+          "dose_unit": "mg",
+          "frequency": "tid",
+          "route": "PO",
+          "duration_days": 5,
+          "total_quantity": "15片",
+          "instructions": "饭后口服，多饮水有助于稀释痰液",
+          "indication": "咳嗽伴白痰，黏痰祛痰治疗"
+        }
+      ],
+      "non_drug_advice": [
+        "充分休息，避免劳累，注意保暖",
+        "多饮温水（每日 1.5-2L），清淡饮食",
+        "房间通风，可使用加湿器缓解气道刺激",
+        "可用淡盐水漱口或温盐水含漱缓解咽部不适",
+        "戴口罩，咳嗽/打喷嚏时遮挡，注意手卫生，避免传染家人",
+        "避免吸烟、饮酒及辛辣刺激性食物",
+        "如自觉症状可控，可暂不服用退热药（37.8℃属低热，无需强行退热）"
+      ],
+      "clinical_reasoning": "患者男性 28 岁，既往体健，无过敏史，无合并症及合并用药，肝肾功能正常。主诉咳嗽发热 3 天，受凉起病，白色少量痰，最高体温 37.8℃，咽部轻度充血无脓苔，肺部听诊清晰。血常规 WBC 7.8、N% 62 均正常，CRP 4.1（<10）、PCT 0.05（<0.5）均不支持细菌感染——综合临床表现+实验室指标，诊断急性病毒性上呼吸道感染（J06.9）明确。\n\n(1) 治疗策略：病毒性 URI 系自限性疾病，以对症支持治疗为主，不开具抗生素及抗病毒药物。\n(2) 选药依据：① 对乙酰氨基酚作为退热/镇痛首选，安全性高，NRDL 甲类；prn 给药，仅在 T>38.5℃或头身痛明显时服用，避免常规使用掩盖病情；单次 0.5g、间隔 ≥6h、≤2g/日，远低于 4g/日的最大剂量上限，肝功正常无累积风险。② 氨溴索用于黏液溶解促进白痰排出，常规剂量 30mg tid×5 天；NRDL 乙类无限制条件。\n(3) 个体化匹配：青年男性，体重 68kg，肝肾功能正常，无过敏史及合并用药——所选药物均为常规剂量，无需调整；无相互作用顾虑。\n(4) 监测/复诊：嘱患者观察症状演变，5-7 天内多数自限缓解；若出现高热持续>3 天、脓黄痰、胸痛气促、咯血、嗜睡精神差等危险征兆需立即复诊，警惕继发细菌感染或下呼吸道感染。",
+      "explicit_avoidance": [
+        {
+          "drug_or_class": "抗生素（如阿莫西林、头孢类、阿奇霉素等）",
+          "reason": "WBC/N%/CRP/PCT 全部正常，咽部无脓苔，肺部清音，临床综合判断为病毒性 URI，无细菌感染证据；无指征预防性使用抗生素，避免耐药性及不良反应风险。"
+        },
+        {
+          "drug_or_class": "奥司他韦等神经氨酸酶抑制剂",
+          "reason": "无流感流行季高暴露史、无典型流感样症状（高热寒战+全身肌痛），症状轻微，发病已 3 天进入抗病毒治疗最佳窗口外，无 NAI 使用指征。"
+        },
+        {
+          "drug_or_class": "复方感冒制剂（含伪麻黄碱/氯苯那敏等多组分）",
+          "reason": "患者症状以咳嗽白痰为主，无明显鼻塞流涕；单组分按症给药更精准，避免多组分复方制剂的重复用药与不必要副作用（嗜睡、心悸、对乙酰氨基酚叠加超量）。"
+        },
+        {
+          "drug_or_class": "镇咳药（如右美沙芬、可待因）",
+          "reason": "患者为湿性咳嗽伴白痰，痰液需排出，强行抑制咳嗽反射不利于痰液清除；以祛痰为主即可。"
+        },
+        {
+          "drug_or_class": "糖皮质激素（口服/全身）",
+          "reason": "普通病毒性 URI 无激素使用指征。"
+        },
+        {
+          "drug_or_class": "中成药抗病毒口服液",
+          "reason": "证据级别有限，且患者主诉自服板蓝根 3 天未见明显好转，无继续/换用指征；以休息+对症治疗为主。"
+        }
+      ],
+      "follow_up": {
+        "next_visit_days": 7,
+        "red_flags": [
+          "发热持续>3 天不退或体温>39℃",
+          "出现黄绿色脓痰或血痰",
+          "胸痛、气促、呼吸困难、SpO2 下降",
+          "意识淡漠、嗜睡、剧烈头痛",
+          "症状加重或新发耳痛/鼻窦疼痛/扁桃体脓性分泌物"
+        ]
+      }
+    },
+    "response": {
+      "prescription_id": "RX-20260531-0001",
+      "status": "submitted",
+      "warnings": [],
+      "submitted_at": "2026-05-31T10:55:47.164458"
+    },
+    "status_code": 201,
+    "latency_ms": 1
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "case_id": "case_02",
+  "name": "支气管哮喘急性发作（GINA 2025 MART 方案）",
+  "patient_id": "P0000234",
+  "difficulty": "⭐⭐",
+  "core_skills": [
+    "急救必须用 SABA（沙丁胺醇）或福莫特罗 ICS 复方",
+    "禁用沙美特罗单药/沙美特罗 ICS 用于急救",
+    "优先吸入而非口服",
+    "GINA 2025 MART 方案知识"
+  ],
+  "failures": {}
+}

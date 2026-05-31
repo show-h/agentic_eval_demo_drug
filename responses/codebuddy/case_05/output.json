@@ -1,0 +1,41 @@
+{
+  "patient_id": "P0000345",
+  "encounter_id": "ENC-20260530-0073",
+  "diagnosis": [
+    {
+      "icd10": "J18.1",
+      "name": "大叶性肺炎（社区获得性肺炎）",
+      "is_primary": true
+    },
+    {
+      "icd10": "N18.6",
+      "name": "终末期肾病",
+      "is_primary": false
+    }
+  ],
+  "prescription_items": [
+    {
+      "generic_name": "阿奇霉素",
+      "specification": "0.25g/片",
+      "dose": 500,
+      "dose_unit": "mg",
+      "frequency": "qd",
+      "route": "PO",
+      "duration_days": 3,
+      "total_quantity": "6片",
+      "instructions": "首日500mg，之后250mg qd",
+      "indication": "J18.1"
+    }
+  ],
+  "non_drug_advice": [
+    "多饮水",
+    "监测体温"
+  ],
+  "clinical_reasoning": "ESRD血透患者，青霉素过敏，选择阿奇霉素口服治疗CAP",
+  "explicit_avoidance": [
+    {
+      "drug_or_class": "青霉素类",
+      "reason": "过敏史"
+    }
+  ]
+}

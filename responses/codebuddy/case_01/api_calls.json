@@ -1,0 +1,281 @@
+[
+  {
+    "timestamp": "2026-05-31T12:49:05.504073",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0042",
+      "patient_id": "P0000123",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T09:14:22"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:49:40.389667",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0042",
+      "patient_id": "P0000123",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T09:14:22"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:49:46.990218",
+    "endpoint": "/api/v1/encounters/current",
+    "method": "GET",
+    "request": {},
+    "response": {
+      "encounter_id": "ENC-20260530-0042",
+      "patient_id": "P0000123",
+      "department": "全科门诊",
+      "physician_id": "DOC-2138",
+      "started_at": "2026-05-30T09:14:22"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:49:54.752360",
+    "endpoint": "/api/v1/patients/P0000123",
+    "method": "GET",
+    "request": {
+      "patient_id": "P0000123"
+    },
+    "response": {
+      "patient_id": "P0000123",
+      "name_masked": "王*",
+      "age": 28,
+      "sex": "male",
+      "weight_kg": 68,
+      "height_cm": 175,
+      "pregnancy_status": "none",
+      "allergies": [],
+      "comorbidities": [],
+      "current_medications": [],
+      "vitals": {
+        "temperature_c": 37.6,
+        "pulse_bpm": 84,
+        "respiration_per_min": 18,
+        "blood_pressure": "118/76",
+        "spo2_percent": 98
+      },
+      "physical_exam": {
+        "consciousness": "清醒",
+        "lung_auscultation": "呼吸音正常，未闻及啰音",
+        "pleural_findings": "未触及胸膜摩擦音",
+        "throat": "咽部轻度充血，无脓苔"
+      },
+      "labs": [
+        {
+          "name": "白细胞计数 (WBC)",
+          "value": 7.8,
+          "unit": "10^9/L",
+          "ref_range": "3.5-9.5",
+          "is_abnormal": false
+        },
+        {
+          "name": "中性粒细胞百分比 (N%)",
+          "value": 62,
+          "unit": "%",
+          "ref_range": "40-75",
+          "is_abnormal": false
+        },
+        {
+          "name": "C 反应蛋白 (CRP)",
+          "value": 4.1,
+          "unit": "mg/L",
+          "ref_range": "<10",
+          "is_abnormal": false
+        },
+        {
+          "name": "降钙素原 (PCT)",
+          "value": 0.05,
+          "unit": "ng/mL",
+          "ref_range": "<0.5",
+          "is_abnormal": false
+        }
+      ],
+      "imaging": [],
+      "renal_function": {
+        "egfr": 105,
+        "crcl": 110,
+        "dialysis": false
+      },
+      "hepatic_function": "normal",
+      "chief_complaint": "咳嗽发热 3 天",
+      "present_illness": "3 天前受凉后出现咳嗽，少量白痰，无黄脓痰；伴低热（最高 37.8℃），自服板蓝根未见明显好转。无气促胸闷，无咯血。",
+      "encounter": {
+        "encounter_id": "ENC-20260530-0042",
+        "department": "全科门诊",
+        "physician_id": "DOC-2138",
+        "physician_diagnosis": [
+          {
+            "icd10": "J06.9",
+            "name": "急性上呼吸道感染",
+            "is_primary": true
+          }
+        ],
+        "started_at": "2026-05-30T09:14:22"
+      }
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:50:09.527209",
+    "endpoint": "/api/v1/drugs/����ɳ��",
+    "method": "GET",
+    "request": {
+      "drug_name": "����ɳ��"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "����ɳ��"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:50:09.566697",
+    "endpoint": "/api/v1/drugs/������������",
+    "method": "GET",
+    "request": {
+      "drug_name": "������������"
+    },
+    "response": {
+      "error": "Drug not found in formulary",
+      "queried": "������������"
+    },
+    "status_code": 404,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:50:18.935786",
+    "endpoint": "/api/v1/drugs/dextromethorphan",
+    "method": "GET",
+    "request": {
+      "drug_name": "dextromethorphan"
+    },
+    "response": {
+      "generic_name": "右美沙芬",
+      "english_name": "dextromethorphan",
+      "drug_class": "antitussive",
+      "atc_code": "R05DA09",
+      "nrdl_category": "B",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:50:18.936670",
+    "endpoint": "/api/v1/drugs/paracetamol",
+    "method": "GET",
+    "request": {
+      "drug_name": "paracetamol"
+    },
+    "response": {
+      "generic_name": "对乙酰氨基酚",
+      "english_name": "paracetamol",
+      "drug_class": "analgesic_antipyretic",
+      "atc_code": "N02BE01",
+      "nrdl_category": "A",
+      "reimbursement_restriction": "无",
+      "_match_type": "exact"
+    },
+    "status_code": 200,
+    "latency_ms": 0
+  },
+  {
+    "timestamp": "2026-05-31T12:51:28.239292",
+    "endpoint": "/api/v1/prescriptions",
+    "method": "POST",
+    "request": {
+      "patient_id": "P0000123",
+      "encounter_id": "ENC-20260530-0042",
+      "diagnosis": [
+        {
+          "icd10": "J06.9",
+          "name": "急性上呼吸道感染",
+          "is_primary": true
+        }
+      ],
+      "prescription_items": [
+        {
+          "generic_name": "对乙酰氨基酚",
+          "specification": "0.5g/片",
+          "dose": 0.5,
+          "dose_unit": "g",
+          "frequency": "tid",
+          "route": "PO",
+          "duration_days": 3,
+          "total_quantity": "9片",
+          "instructions": "体温>38.5℃或咽痛明显时服用，两次用药间隔至少4小时",
+          "indication": "J06.9"
+        },
+        {
+          "generic_name": "右美沙芬",
+          "specification": "15mg/片",
+          "dose": 15,
+          "dose_unit": "mg",
+          "frequency": "tid",
+          "route": "PO",
+          "duration_days": 5,
+          "total_quantity": "15片",
+          "instructions": "咳嗽明显时服用，睡前可加服一次",
+          "indication": "J06.9"
+        }
+      ],
+      "non_drug_advice": [
+        "多饮温水，每日2000ml以上",
+        "充分休息，避免劳累",
+        "保持室内空气流通",
+        "症状持续超过1周或高热不退及时复诊"
+      ],
+      "clinical_reasoning": "患者为28岁男性，急性上呼吸道感染（J06.9）。实验室检查：WBC 7.8×10^9/L（正常），CRP 4.1mg/L（正常），PCT 0.05ng/mL（正常），提示病毒性感染可能性大，无细菌感染证据，不需抗生素治疗。患者有低热（37.6℃）和咳嗽症状，予以对症处理：1）对乙酰氨基酚0.5g tid prn，用于退热及缓解咽痛，该药解热镇痛效果好，肝肾功能正常患者使用安全，医保甲类无限制；2）右美沙芬15mg tid，中枢性镇咳药，适用于干咳或咳嗽影响休息者，本患者咳嗽伴少量白痰，可选用。两药联用无相互作用。疗程：退热药不超过3天，镇咳药不超过5天。患者年轻、无基础疾病、无药物过敏史，用药风险低。",
+      "explicit_avoidance": [
+        {
+          "drug_or_class": "抗生素（阿莫西林、头孢类、大环内酯类等）",
+          "reason": "患者无细菌感染证据（WBC正常、CRP正常、PCT<0.5），病毒性上呼吸道感染无需抗生素，避免抗生素滥用"
+        },
+        {
+          "drug_or_class": "糖皮质激素",
+          "reason": "普通上呼吸道感染不建议使用全身激素，副作用大且无明确获益"
+        },
+        {
+          "drug_or_class": "复方感冒药（含多种成分的感冒灵等）",
+          "reason": "避免重复用药和不良反应叠加，症状单一用药更安全"
+        }
+      ],
+      "follow_up": {
+        "next_visit_days": 7,
+        "red_flags": [
+          "高热持续超过3天（体温>39℃）",
+          "出现呼吸困难或气促",
+          "咳黄脓痰或血痰",
+          "胸痛或吞咽困难",
+          "症状超过1周无改善或加重"
+        ]
+      }
+    },
+    "response": {
+      "prescription_id": "RX-20260531-0001",
+      "status": "submitted",
+      "warnings": [],
+      "submitted_at": "2026-05-31T12:51:28.239272"
+    },
+    "status_code": 201,
+    "latency_ms": 1
+  }
+]

@@ -1,0 +1,52 @@
+#!/bin/bash
+# Codex (OpenAI via codex) adapter - 捕获完整轨迹
+# 用法: ./codex.sh <workspace_dir> <output_dir>
+#
+# 实测：codex v0.0.9 提供 `exec` 子命令用于非交互式运行。
+# - exec: 非交互式运行（别名 e），会读取 PROMPT 后退出
+# - --dangerously-bypass-approvals-and-sandbox: 跳过审批 + 不沙箱化
+#   （Windows 上 --full-auto 走的 workspace-write 沙箱需要 SeTcbPrivilege 系统权限，
+#    普通用户账号无法运行；评测场景下我们已经隔离了 workspace，可以安全跳过沙箱）
+# - -C/--cd: 指定工作根（agent 的 cwd）
+# - -m: 指定模型（默认走 gpt-5.4，可白名单切换）
+
+WORKSPACE_DIR=$1
+OUTPUT_DIR=${2:-"$WORKSPACE_DIR"}
+
+# 统一转成绝对路径，避免 cd 后相对路径失效
+WORKSPACE_DIR=$(cd "$WORKSPACE_DIR" && pwd)
+mkdir -p "$OUTPUT_DIR"
+OUTPUT_DIR=$(cd "$OUTPUT_DIR" && pwd)
+
+cd "$WORKSPACE_DIR"
+
+PROMPT=$(cat task_prompt.md)
+
+echo "============================================" > "$OUTPUT_DIR/trajectory.log"
+echo "AGENT: Codex Internal (gpt-5.4)" >> "$OUTPUT_DIR/trajectory.log"
+echo "TIMESTAMP: $(date -Iseconds)" >> "$OUTPUT_DIR/trajectory.log"
+echo "WORKSPACE: $WORKSPACE_DIR" >> "$OUTPUT_DIR/trajectory.log"
+echo "============================================" >> "$OUTPUT_DIR/trajectory.log"
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== PROMPT ==========" >> "$OUTPUT_DIR/trajectory.log"
+echo "$PROMPT" >> "$OUTPUT_DIR/trajectory.log"
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== EXECUTION ==========" >> "$OUTPUT_DIR/trajectory.log"
+
+# codex exec：非交互式运行
+# Windows 沙箱需要 SeTcbPrivilege，普通用户跑会全部失败 1385，
+# 所以改用 --dangerously-bypass-approvals-and-sandbox（评测 workspace 已隔离，安全）
+# printf '' | 给 stdin 一个"立刻结束"信号，避免某些非 tty 环境下 codex 卡在 "Reading additional input from stdin..."
+printf '' | codex exec \
+    --dangerously-bypass-approvals-and-sandbox \
+    -C "$WORKSPACE_DIR" \
+    -m gpt-5.4 \
+    "$PROMPT" \
+    2>&1 | tee -a "$OUTPUT_DIR/trajectory.log"
+
+echo "" >> "$OUTPUT_DIR/trajectory.log"
+echo "========== END ==========" >> "$OUTPUT_DIR/trajectory.log"
+
+if [ -f "$WORKSPACE_DIR/output.json" ]; then
+    cp "$WORKSPACE_DIR/output.json" "$OUTPUT_DIR/output.json"
+fi
